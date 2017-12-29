@@ -1,0 +1,60 @@
+
+state={
+	id=325
+	name="STATE_325"
+	resources={
+		tungsten=1
+	}
+
+	history={
+		owner = YUN
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			1319 10 
+		}
+		victory_points = {
+			7965 3 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 2
+		}
+
+	}
+
+	provinces={
+		1114 1172 1196 1319 1383 1522 1653 4501 5009 5072 7446 7606 8023 10346 10413 10776 12262 12282 12841
+	}
+	manpower=11994500
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,271 @@
+﻿division_template = {
+	name = "杂牌军"				# Represents: German-trained divisions (better equipment than rest),
+									# 	as well as two-division infantry corps (generally poorly-equipped militias),
+	regiments = {					#	and local militia groups.
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0 # garrison
+}
+division_template = {
+	name = "中原军"			# Represents three-division infantry corps (generally poorly-equipped militias)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+### OOB ###
+units = {
+	###### Kuomintang Army (CO: Chang Kai-shek) ######
+	##### Beiping-Tianjin Area (CO: ) #####
+	### 29 Juntuan (highly-reinforced corps) ###
+	division = {
+		name = "直隶第1师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第2师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第3师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第4师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "直隶第5师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第6师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第7师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第8师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第9师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第10师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第11师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第12师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第13师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}division = {
+		name = "直隶第14师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第15师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第16师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第17师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第18师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	
+	division = {
+		name = "直隶第19师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第20师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第21师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第22师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第23师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第24师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第25师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第26师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "直隶第27师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}division = {
+		name = "预备第1师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "预备第2师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "预备第3师"
+		location = 4619
+		division_template = "中原军"
+		start_experience_factor = 0.3
+	}
+}
+
+
+### Air Forces ###
+air_wings = {
+# Roughly 300 fighters, 21 tac bombers, but only 200 aircraft total were serviceable in 1937 due to neglect
+	# Beijing
+	608 = { 
+		fighter_equipment_0 = { owner = "CHI" amount = 30 }				# 3rd PG - Fiat CR.32
+	}
+	#Shanghai
+	613 = {
+		fighter_equipment_0 = { owner = "CHI" amount = 70 } 		# 4th PF, 5th PG, 9th PS - Curtiss Hawk
+		tac_bomber_equipment_0 =  { owner = "CHI" amount = 15 }		# Combined BG -- Martin 139WC, Savoia S.72
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 100
+	}	
+	
+#Under Construction in Shanghai
+	# Light Cruiser 
+	add_equipment_production = { 		# "Pinghai"
+		equipment = {
+			type = light_cruiser_1
+			creator = "CHI" 
+		}
+		requested_factories = 1
+		progress = 0.33
+		amount = 1
+	}
+}

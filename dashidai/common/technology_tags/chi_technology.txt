@@ -1,0 +1,14 @@
+
+
+technology_categories = {
+	broadsword_team_tech
+	teaching_team_tech
+	teaching_unit_tech
+	firepower_unit_tech
+}
+
+technology_folders = {
+	
+}
+
+ 

@@ -1,0 +1,110 @@
+﻿capital = 617
+
+oob = "SIK_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 4
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+}
+
+add_ideas = {
+	idea = CHI_tonghuopengzhang
+	idea = CHI_chanyelan
+	idea = SIK_yuminzhengce
+	idea = CHI_danongyeguoziguyilai_wenti
+	idea = CHI_gaozizhidu_wenti
+}
+
+set_research_slots = 2
+
+set_national_unity = 0.70
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 1
+		}
+
+		fascism = {
+			popularity = 0
+		}
+		
+		communism = {
+			popularity = 9
+			#banned = no #default is no
+		}
+		
+		neutrality = { 
+			popularity = 90
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1924.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "杨增新"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "gfx/leaders/SIK/yangzengxin.dds"
+	expire = "9999.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "杨增新"
+	desc = "POLITICS_ZHANG_GUOTAO_DESC"
+	picture = "gfx/leaders/SIK/yangzengxin.dds"
+	expire = "9999.1.1"
+	ideology = leninism
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "杨增新"
+	desc = "POLITICS_WANG_JINGWEI_DESC"
+	picture = "gfx/leaders/SIK/yangzengxin.dds"
+	expire = "9999.1.1"
+	ideology = fascism_ideology
+	traits = {
+		cornered_fox
+	}
+}
+
+create_country_leader = {
+	name = "杨增新"
+	desc = "POLITICS_ZHANG_LAN_DESC"
+	picture = "gfx/leaders/SIK/yangzengxin.dds"
+	expire = "9999.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+add_opinion_modifier = { target = PRC modifier = hostile_status }
+
+create_corps_commander = {  #元帅
+	name = "杨增新"
+	portrait_path = "gfx/leaders/SIK/yangzengxin.dds"
+	traits = { defensive_doctrine }
+	skill = 6
+}
+
+
+

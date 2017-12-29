@@ -1,0 +1,29 @@
+add_namespace = sov
+#¡–ƒ˛ ≈ ¿
+news_event = {
+	id = sov.63
+	title = sov.63.t
+	desc = sov.63.d
+	picture = GFX_CHI_leader_liening
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = sov.63.a
+		
+		trigger = {
+				TAG = sov
+		}
+	}
+	option = {
+		name = sov.63.b
+
+		trigger = {
+			NOT = {
+				TAG = sov
+			}
+		}
+	}
+}

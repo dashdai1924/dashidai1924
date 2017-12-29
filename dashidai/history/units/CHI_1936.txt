@@ -1,0 +1,208 @@
+﻿division_template = {
+	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
+									# 	as well as two-division infantry corps (generally poorly-equipped militias),
+	regiments = {					#	and local militia groups.
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0 # garrison
+}
+division_template = {
+	name = "北伐军"			# Represents three-division infantry corps (generally poorly-equipped militias)
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+### OOB ###
+units = {
+	###### Kuomintang Army (CO: Chang Kai-shek) ######
+	##### Beiping-Tianjin Area (CO: ) #####
+	### 29 Juntuan (highly-reinforced corps) ###
+	division = {
+		name = "国民革命军第一师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第二师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第三师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第四师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	
+	division = {
+		name = "国民革命军第五师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第六师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第七师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第八师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第九师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第十师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第十一师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第十二师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第十三师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第十四师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第十五师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "国民革命军第十六师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}
+	division = {
+		name = "预备第一师"
+		location = 1187
+		division_template = "北伐军"
+		start_experience_factor = 1.0
+	}	
+	
+
+	##### ROCN #####
+	navy = {
+		name = "广东水师"
+		base = 4050
+		location = 4050 #Shanghai
+		ship = { name = "Yingrui" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Ninghai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Hairong" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Zhaohe" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		ship = { name = "Haiqi" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
+		
+	}
+}
+
+
+### Air Forces ###
+air_wings = {
+# Roughly 300 fighters, 21 tac bombers, but only 200 aircraft total were serviceable in 1937 due to neglect
+	# Beijing
+	608 = { 
+		fighter_equipment_0 = { owner = "CHI" amount = 30 }				# 3rd PG - Fiat CR.32
+	}
+	#Shanghai
+	613 = {
+		fighter_equipment_0 = { owner = "CHI" amount = 70 } 		# 4th PF, 5th PG, 9th PS - Curtiss Hawk
+		tac_bomber_equipment_0 =  { owner = "CHI" amount = 15 }		# Combined BG -- Martin 139WC, Savoia S.72
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 100
+	}	
+	
+#Under Construction in Shanghai
+	# Light Cruiser 
+	add_equipment_production = { 		# "Pinghai"
+		equipment = {
+			type = light_cruiser_1
+			creator = "CHI" 
+		}
+		requested_factories = 1
+		progress = 0.33
+		amount = 1
+	}
+}

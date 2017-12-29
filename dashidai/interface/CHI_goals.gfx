@@ -1,0 +1,310 @@
+spriteTypes = {	
+
+	###P_goals
+	spriteType = {
+		name = "GFX_goal_tfv_smiling_buddha"
+		texturefile = "gfx/interface/goals/goal_tfv_smiling_buddha.dds"
+	}
+	
+	###EastAsia_goals
+	
+	spriteType = {
+		name = "GFX_goal_difangbudui"
+		texturefile = "gfx/interface/goals/goal_difangbudui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_support_fourth_int"
+		texturefile = "gfx/interface/goals/goal_support_fourth_int.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_kmt_01"
+		texturefile = "gfx/interface/goals/goal_kmt_01.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_bayihongxing"
+		texturefile = "gfx/interface/goals/goal_bayihongxing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_generic_occypy_states_coastal"
+		texturefile = "gfx/interface/goals/goal_generic_occypy_states_coastal.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_manzhou_01"
+		texturefile = "gfx/interface/goals/goal_manzhou_01.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_manzhou_02"
+		texturefile = "gfx/interface/goals/goal_manzhou_02.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_baoxiang"
+		texturefile = "gfx/interface/goals/goal_baoxiang.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_rimanyiti"
+		texturefile = "gfx/interface/goals/goal_rimanyiti.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_dashiguan"
+		texturefile = "gfx/interface/goals/goal_dashiguan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_meixieshi"
+		texturefile = "gfx/interface/goals/goal_chi_meixieshi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_dexieshi"
+		texturefile = "gfx/interface/goals/goal_chi_dexieshi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_jiaodaozongdui"
+		texturefile = "gfx/interface/goals/goal_chi_jiaodaozongdui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_qinaijingchen"
+		texturefile = "gfx/interface/goals/goal_chi_qinaijingchen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_goal_chi_feihudui"
+		texturefile = "gfx/interface/goals/goal_chi_feihudui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_jiangshitongzhi"
+		texturefile = "gfx/interface/goals/goal_chi_jiangshitongzhi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_zhongyangjunxiao"
+		texturefile = "gfx/interface/goals/goal_chi_zhongyangjunxiao.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_woshou"
+		texturefile = "gfx/interface/goals/goal_woshou.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_jinxinkmt"
+		texturefile = "gfx/interface/goals/goal_chi_jinxinkmt.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_chi_jiangjieshi"
+		texturefile = "gfx/interface/goals/goal_chi_jiangjieshi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_navy_dyh"
+		texturefile = "gfx/interface/goals/goal_navy_dyh.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_manzhou_zhongyangyinhang"
+		texturefile = "gfx/interface/goals/goal_manzhou_zhongyangyinhang.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_xihepai_xiangyan"
+		texturefile = "gfx/interface/goals/goal_xihepai_xiangyan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_changge_01"
+		texturefile = "gfx/interface/goals/goal_changge_01.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_manzhou_guoqi"
+		texturefile = "gfx/interface/goals/goal_manzhou_guoqi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_news_baohzhi"
+		texturefile = "gfx/interface/goals/goal_news_baohzhi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_manzhou_dfle"
+		texturefile = "gfx/interface/goals/goal_manzhou_dfle.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_yicunshanheyicunxue"
+		texturefile = "gfx/interface/goals/goal_yicunshanheyicunxue.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_generic_occypy_states_ongoing_war"
+		texturefile = "gfx/interface/goals/goal_generic_occypy_states_ongoing_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_kmt_02"
+		texturefile = "gfx/interface/goals/goal_kmt_02.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_dudaodui"
+		texturefile = "gfx/interface/goals/goal_dudaodui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_jap_weianfu"
+		texturefile = "gfx/interface/goals/goal_jap_weianfu.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_CHI_junqi"
+		texturefile = "gfx/interface/goals/goal_CHI_junqi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_xinzhixu_chi"
+		texturefile = "gfx/interface/goals/goal_xinzhixu_chi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_xinzhixu_prc"
+		texturefile = "gfx/interface/goals/goal_xinzhixu_prc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_red_china_map"
+		texturefile = "gfx/interface/goals/goal_red_china_map.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_china_prc_guohui"
+		texturefile = "gfx/interface/goals/goal_china_prc_guohui.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_prc_jiefangjun"
+		texturefile = "gfx/interface/goals/goal_prc_jiefangjun.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_prc_zhongyangjunwei"
+		texturefile = "gfx/interface/goals/goal_prc_zhongyangjunwei.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_prc_gonganju"
+		texturefile = "gfx/interface/goals/goal_prc_gonganju.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_prc_maozedong1"
+		texturefile = "gfx/interface/goals/goal_prc_maozedong1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_prc_maozedong2"
+		texturefile = "gfx/interface/goals/goal_prc_maozedong2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_dengxiaoping"
+		texturefile = "gfx/interface/goals/goal_dengxiaoping.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_prc_bianqubi"
+		texturefile = "gfx/interface/goals/goal_prc_bianqubi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_baiqiuen"
+		texturefile = "gfx/interface/goals/goal_baiqiuen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_taiwan"
+		texturefile = "gfx/interface/goals/goal_taiwan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_quanguorenda"
+		texturefile = "gfx/interface/goals/goal_quanguorenda.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_kuloutou"
+		texturefile = "gfx/interface/goals/goal_kuloutou.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_longyunfei"
+		texturefile = "gfx/interface/goals/goal_longyunfei.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_goal_jiangshi"
+		texturefile = "gfx/interface/goals/goal_jiangshi.dds"
+	}
+	
+	
+	
+	
+	
+	
+	###### SHX ######
+	
+	spriteType = {
+		name = "GFX_goal_china_liliang"
+		texturefile = "gfx/interface/goals/goal_china_liliang.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_china_shisiweiguo"
+		texturefile = "gfx/interface/goals/goal_china_shisiweiguo.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_china_liliang_II"
+		texturefile = "gfx/interface/goals/goal_china_liliang_II.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_china_liliang_not_prc"
+		texturefile = "gfx/interface/goals/goal_china_liliang_not_prc.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_china_yanxishan"
+		texturefile = "gfx/interface/goals/goal_china_yanxishan.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_china_shijie"
+		texturefile = "gfx/interface/goals/goal_china_shijie.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_shx_taiyuanyinhang"
+		texturefile = "gfx/interface/goals/goal_shx_taiyuanyinhang.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_shxdayuejin"
+		texturefile = "gfx/interface/goals/goal_shxdayuejin.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_DBJ_zhangzuolin"
+		texturefile = "gfx/interface/goals/goal_DBJ_zhangzuolin.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_production"
+		texturefile = "gfx/interface/goals/goal_generic_production.dds"
+	}
+	
+	
+}

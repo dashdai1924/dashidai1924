@@ -1,0 +1,578 @@
+focus_tree = {
+id = WUH_focus
+
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = WUH
+			}
+		}
+	}
+	
+	default = no
+	#委员会的抉择
+	focus = {
+		id = WUH_1
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 4
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_national_unity = 0.05
+				}
+
+	}
+	#走向民主
+		focus = {
+		id = WUH_2
+		icon = GFX_goal_support_democracy
+		cost = 10
+		prerequisite = {
+			focus = WUH_1
+		}
+		mutually_exclusive = {
+			focus = WUH_3
+		}
+		x = 2
+		y = 1
+			completion_reward = {
+					add_ideas = democratic_influence
+				}
+
+	}
+	#显示霸权
+	focus = {
+		id = WUH_3
+		icon = GFX_goal_generic_special_forces
+		cost = 10
+		prerequisite = {
+			focus = WUH_1
+		}
+		mutually_exclusive = {
+			focus = WUH_2
+		}
+		x = 4
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+						}
+				}
+
+	}
+	#强大青天白日
+focus = {
+		id = WUH_4
+		icon = GFX_goal_generic_cavalry
+		cost = 10
+		prerequisite = {
+			focus = WUH_3
+		}
+		x = 4
+		y = 2
+			completion_reward = {
+					add_ideas = ideological_fanaticism_focus
+				}
+
+	}
+	#武汉飞机研究
+		focus = {
+		id = WUH_5
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		prerequisite = {
+			focus = WUH_2
+		}
+		x = 2
+		y = 2
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = fighter_equipment_0
+							amount = 500
+							producer = ENG
+						}
+				}
+
+	}
+	#参考英国军事制度
+	focus = {
+		id = WUH_8
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		prerequisite = {
+			focus = WUH_5
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+					add_ideas = democratic_influence
+				}
+
+	}
+	#美国的贷款
+	focus = {
+		id = WUH_9
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		prerequisite = {
+			focus = WUH_8
+		}
+		x = 2
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_political_power = 500
+				}
+
+	}
+	#留英科学家
+		focus = {
+		id = WUH_11
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = WUH_9
+		}
+		x = 2
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
+					add_political_power = -150
+				}
+			available = {
+					has_political_power > 150
+				}
+
+	}
+	#动员全省 战死沙场
+	focus = {
+		id = WUH_6
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		prerequisite = {
+			focus = WUH_4
+		}
+		x = 4
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = zhansishachang
+				}
+
+	}
+	#与西方合作
+		focus = {
+		id = WUH_7
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		prerequisite = {
+			focus = WUH_6
+		}
+		x = 4
+		y = 3
+			completion_reward = {
+					add_research_slot = 1
+				}
+			available = {
+					num_of_factories > 30
+				}
+
+	}
+	#贸易额增加
+	focus = {
+		id = WUH_10
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10
+		prerequisite = {
+			focus = WUH_7
+		}
+		x = 4
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = war_economy
+					add_ideas = limited_conscription
+				}
+
+	}
+	#改进步兵装备
+		focus = {
+		id = WUH_12
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		prerequisite = {
+			focus = WUH_10
+			focus = WUH_11
+		}
+		x = 4
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.6
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.6
+				uses = 2
+				category = support_tech
+			}
+				}
+
+	}
+	#武汉外交之路
+		focus = {
+		id = WUH_19
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		x = 8
+		y = 0
+	  ai_will_do = {
+					factor = 10
+				}
+				completion_reward = {
+				add_political_power = 100
+				}
+
+	}
+	#中央政府的物资
+	focus = {
+		id = WUH_20
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = WUH_19
+		}
+		x = 6
+		y = 1
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 489
+				producer = CHI
+			}
+		}
+	}
+		#中央政府的物资2
+	focus = {
+		id = WUH_21
+		icon = GFX_goal_generic_small_arms
+		cost = 10
+		prerequisite = {
+			focus = WUH_20
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 500
+				producer = CHI
+			}
+		}
+	}
+		#中央政府的物资3
+	focus = {
+		id = WUH_22
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		prerequisite = {
+			focus = WUH_21
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+		    add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+				producer = CHI
+			}
+		}
+	}
+	#苏联物资1
+		focus = {
+		id = WUH_23
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = WUH_19
+		}
+		x = 10
+		y = 1
+	    completion_reward = {
+		    add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 500
+				producer = SOV
+			}
+		}
+	}
+	#苏联物资2
+	focus = {
+		id = WUH_24
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = WUH_23
+		}
+		x = 10
+		y = 2
+	    completion_reward = {
+		    add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 50
+				producer = USA
+			}
+		}
+	}
+	#苏联物资3
+	focus = {
+		id = WUH_25
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		prerequisite = {
+			focus = WUH_24
+		}
+		x = 10
+		y = 3
+	    completion_reward = {
+		    add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 30
+				producer = USA
+			}
+		}
+	}
+	#枪械换飞机
+		focus = {
+		id = WUH_26
+		icon = GFX_goal_generic_air_fighter
+		cost = 10
+		prerequisite = {
+			focus = WUH_25
+		}
+		prerequisite = {
+			focus = WUH_22
+		}
+		x = 8
+		y = 4
+		completion_reward = {
+			remove_ideas = ENGman_advisors
+			SOV = { add_political_power = 50 }
+			WUH = { add_political_power = -50 }
+			add_equipment_to_stockpile = {
+				type = transport_plane_equipment_1
+				amount = 33
+				producer = ENG
+			}
+		}
+	}
+	#武汉高速发展
+		focus = {
+		id = WUH_13
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5.00
+		x = 14
+		y = 0
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_political_power = 200
+				}
+
+	}
+	#京兆军工厂
+		focus = {
+		id = WUH_14
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = WUH_13
+		}
+		x = 12
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					746 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			available = {
+					746 = {
+							is_controlled_by = WUH
+						}
+				}
+	}
+	#武汉军工厂
+	focus = {
+		id = WUH_15
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = WUH_14
+		}
+		x = 12
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					746 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			available = {
+					746 = {
+							is_controlled_by = WUH
+						}
+				}
+	}
+	#武汉铝矿
+		focus = {
+		id = WUH_18
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = WUH_13
+		}
+		x = 14
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = aluminium
+							amount = 20
+							state = 746
+						}
+				}
+	}
+		#油田
+		focus = {
+		id = WUH_27
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = WUH_18
+		}
+		x = 14
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = oil
+							amount = 20
+							state = 746
+						}
+				}
+	}
+	#铁
+		focus = {
+		id = WUH_28
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = WUH_27
+		}
+		x = 14
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = steel
+							amount = 20
+							state = 746
+						}
+				}
+	}
+	#兆民财团
+		focus = {
+		id = WUH_16
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = WUH_13
+		}
+		x = 16
+		y = 1
+			completion_reward = {
+					746 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			available = {
+					746 = {
+							is_controlled_by = WUH
+						}
+				}
+	}
+	#国民财业集团
+		focus = {
+		id = WUH_17
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = WUH_16
+		}
+		x = 16
+		y = 2
+			completion_reward = {
+					746 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+						}
+				}
+			available = {
+					746 = {
+							is_controlled_by = WUH
+						}
+				}
+	}
+	}

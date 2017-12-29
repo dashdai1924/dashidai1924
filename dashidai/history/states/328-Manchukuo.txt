@@ -1,0 +1,56 @@
+
+state={
+	id=328
+	name="STATE_328" # Kirin
+	manpower = 7536266
+	
+	state_category = rural
+
+	history={
+		owner = FEN
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4572 1
+		}
+		victory_points = {
+			10433 1 
+		}
+
+	}
+
+	provinces={
+		800 861 887 927 945 946 1567 3888 3913 3929 3932 3947 3949 4503 4572 6868 6905 6947 7523 7591 7652 7663 9759 9782 9803 9841 9848 9866 9883 9913 9928 10433 11744 11781 11823 11850 11862 11864 12412 
+	}
+}

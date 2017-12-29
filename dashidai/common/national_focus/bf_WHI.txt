@@ -1,0 +1,1000 @@
+focus_tree = {
+	id = WHI
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WHI
+		}
+	}
+	default = no
+	focus = {
+		id = WHI_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		x = 3
+		y = 0
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 0.75
+							uses = 2
+							category = industry
+						}
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = WHI_10
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		x = 13
+		y = 0
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_prepare_for_the_next_war
+							bonus = 0.5
+							uses = 2
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_23
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		x = 32
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_national_unity = 0.05
+				}
+
+	}
+	focus = {
+		id = WHI_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_1
+		}
+		mutually_exclusive = {
+			focus = WHI_3
+		}
+		x = 2
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 614 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = POL_CENTRAL_INDUSTRIAL_REGION_EXPANDED
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_2
+		}
+		x = 2
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 608 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = POL_CENTRAL_INDUSTRIAL_REGION_EXPANDED
+						}
+					random_owned_controlled_state = {
+							prioritize = { 608 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = POL_expansion_of_new_towns_1
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_6
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_4
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+					add_tech_bonus = {
+							name = construction_tech
+							bonus = 0.75
+							uses = 2
+							category = construction_tech
+						}
+					add_political_power = 100
+				}
+
+	}
+	focus = {
+		id = WHI_3
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_1
+		}
+		mutually_exclusive = {
+			focus = WHI_2
+		}
+		x = 4
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 613 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = POL_CENTRAL_INDUSTRIAL_REGION_EXPANDED
+						}
+					random_owned_controlled_state = {
+							prioritize = { 607 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = synthetic_refinery
+									level = 1
+									instant_build = yes
+								}
+							set_state_flag = POL_expansion_of_new_towns_1
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_5
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_3
+		}
+		x = 4
+		y = 2
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					613 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					597 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					598 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					614 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+					608 = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = infrastructure
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_7
+		icon = GFX_goal_generic_construction
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_5
+		}
+		x = 4
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = steel
+							amount = 20
+							state = 620
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_11
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_10
+		}
+		x = 10
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					609 = {
+							add_building_construction = {
+									type = bunker
+									province = 3900
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 3830
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 900
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 6969
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_13
+		icon = GFX_goal_generic_construct_military
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_11
+		}
+		x = 10
+		y = 2
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					608 = {
+							add_building_construction = {
+									type = bunker
+									province = 4140
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 9843
+									level = 3
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 11761
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = coastal_bunker
+									province = 10068
+									level = 3
+									instant_build = yes
+								}
+						}
+					600 = {
+							add_building_construction = {
+									type = bunker
+									province = 7004
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 9942
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 11945
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = anti_air_building
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 4081
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 10112
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 12030
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 1110
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 11961
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 7054
+									level = 1
+									instant_build = yes
+								}
+							add_building_construction = {
+									type = bunker
+									province = 1066
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_12
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_10
+		}
+		x = 12
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.25
+							uses = 2
+							category = infantry_weapons
+							category = artillery
+						}
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.25
+							uses = 1
+							category = support_tech
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_14
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_12
+		}
+		x = 12
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = motorized_bonus
+							bonus = 0.5
+							technology = motorised_infantry
+						}
+				}
+			bypass = {
+					has_tech = motorised_infantry
+				}
+
+	}
+	focus = {
+		id = WHI_15
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_13
+			focus = WHI_14
+		}
+		x = 11
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					FRA = {
+							add_political_power = 50
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 2000
+							producer = FRA
+						}
+					ENG = {
+							add_political_power = 50
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 2000
+							producer = ENG
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_17
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_7
+			focus = WHI_6
+		}
+		prerequisite = {
+			focus = WHI_15
+		}
+		x = 7
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = WHI_100
+				}
+
+	}
+	focus = {
+		id = WHI_8
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_10
+		}
+		x = 15
+		y = 1
+			completion_reward = {
+					navy_experience = 25
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+							set_country_flag = naval_effort_built
+						}
+					if = {
+							limit = {
+									NOT = {
+											any_owned_state = {
+													dockyard > 0
+													free_building_slots = {
+															building = dockyard
+															size > 2
+															include_locked = yes
+														}
+												}
+										}
+									any_owned_state = {
+											is_coastal = yes
+										}
+								}
+							random_owned_controlled_state = {
+									limit = {
+											is_coastal = yes
+											free_building_slots = {
+													building = dockyard
+													size > 2
+													include_locked = yes
+												}
+										}
+									add_extra_state_shared_building_slots = 2
+									add_building_construction = {
+											type = dockyard
+											level = 2
+											instant_build = yes
+										}
+								}
+						}
+					add_political_power = -200
+				}
+
+	}
+	focus = {
+		id = WHI_18
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_8
+		}
+		mutually_exclusive = {
+			focus = WHI_9
+		}
+		x = 14
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = bc_tech
+							bonus = 0.5
+							uses = 1
+							category = bc_tech
+						}
+					add_tech_bonus = {
+							name = bb_tech
+							bonus = 0.5
+							uses = 1
+							category = bb_tech
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_19
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_18
+		}
+		x = 14
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = WHI_102
+				}
+
+	}
+	focus = {
+		id = WHI_9
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_8
+		}
+		mutually_exclusive = {
+			focus = WHI_18
+		}
+		x = 16
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.5
+							uses = 1
+							category = cl_tech
+						}
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.5
+							uses = 1
+							category = dd_tech
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_20
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_9
+		}
+		x = 16
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = WHI_103
+				}
+
+	}
+	focus = {
+		id = WHI_16
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_10
+		}
+		x = 19
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					600 = {
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = air_base
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+			available = {
+					600 = {
+							is_controlled_by = WHI
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_21
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_16
+		}
+		x = 18
+		y = 3
+			completion_reward = {
+					air_experience = 25
+					add_tech_bonus = {
+							name = light_fighter_bonus
+							bonus = 0.5
+							uses = 2
+							category = light_fighter
+						}
+					add_political_power = -100
+				}
+
+	}
+	focus = {
+		id = WHI_30
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_17
+			focus = WHI_19
+			focus = WHI_20
+		}
+		prerequisite = {
+			focus = WHI_21
+		}
+		prerequisite = {
+			focus = WHI_17
+		}
+		x = 12
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = WHI_101
+				}
+
+	}
+	focus = {
+		id = WHI_25
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_23
+		}
+		mutually_exclusive = {
+			focus = WHI_26
+		}
+		x = 30
+		y = 1
+			completion_reward = {
+					add_ideas = democratic_influence
+				}
+
+	}
+	focus = {
+		id = WHI_22
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_16
+		}
+		prerequisite = {
+			focus = WHI_25
+		}
+		x = 24
+		y = 3
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = fighter_equipment_0
+							amount = 500
+							producer = ENG
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_27
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_25
+		}
+		x = 30
+		y = 3
+			completion_reward = {
+					add_ideas = democratic_influence
+				}
+
+	}
+	focus = {
+		id = WHI_29
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_27
+		}
+		x = 30
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = WHI_105
+				}
+
+	}
+	focus = {
+		id = WHI_24
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_29
+		}
+		x = 30
+		y = 5
+			completion_reward = {
+					add_research_slot = 1
+					add_political_power = -150
+				}
+			available = {
+					has_political_power > 150
+				}
+
+	}
+	focus = {
+		id = WHI_26
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_23
+		}
+		mutually_exclusive = {
+			focus = WHI_25
+		}
+		x = 35
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_popularity = {
+							ideology = neutrality
+							popularity = 0.2
+						}
+				}
+
+	}
+	focus = {
+		id = WHI_28
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_32
+		}
+		x = 35
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = WHI_104
+				}
+
+	}
+	focus = {
+		id = WHI_31
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_32
+		}
+		x = 35
+		y = 5
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = war_economy
+					add_ideas = limited_conscription
+				}
+
+	}
+	focus = {
+		id = WHI_32
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_28
+		}
+		x = 35
+		y = 4
+			completion_reward = {
+					add_research_slot = 1
+				}
+			available = {
+					num_of_factories > 30
+				}
+
+	}
+	focus = {
+		id = newfocus_32
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_26
+		}
+		x = 35
+		y = 2
+			completion_reward = {
+					add_ideas = ideological_fanaticism_focus
+				}
+
+	}
+	focus = {
+		id = newfocus_33
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = WHI_31
+			focus = WHI_24
+		}
+		x = 33
+		y = 6
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = WHI_106
+				}
+
+	}
+}

@@ -1,0 +1,85 @@
+﻿add_namespace = italy
+#承认梵蒂冈独立
+news_event = {
+	id = italy.17
+	title = italy.17.t
+	desc = italy.17.d
+	picture = news_event_ita_fdgltl_tiaoyue
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = italy.17.a
+		
+		trigger = {
+				TAG = ita
+		}
+	}
+	option = {
+		name = italy.17.b
+
+		trigger = {
+			NOT = {
+				TAG = ita
+			}
+		}
+	}
+}
+#公审墨索里尼
+news_event = {
+	id = italy.19
+	title = italy.19.t
+	desc = italy.19.d
+	picture = news_event_033
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = italy.19.a
+		
+		trigger = {
+				TAG = ita
+		}
+	}
+	option = {
+		name = italy.19.b
+
+		trigger = {
+			NOT = {
+				TAG = ita
+			}
+		}
+	}
+}
+#利比亚抗意战争结束
+news_event = {
+	id = italy.20
+	title = italy.20.t
+	desc = italy.20.d
+	picture = news_event_033
+
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = italy.19.a
+		
+		trigger = {
+				TAG = ita
+		}
+	}
+	option = {
+		name = italy.19.b
+
+		trigger = {
+			NOT = {
+				TAG = ita
+			}
+		}
+	}
+}

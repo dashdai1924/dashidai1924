@@ -1,0 +1,35 @@
+#########################
+## jap Mod Events ##
+#########################
+
+add_namespace = jap
+
+#º”÷ÿ±¯¡¶
+news_event = {
+	id = jap.103
+	title = jap.103.t
+	desc = jap.103.d
+	picture = GFX_jap_leader_xunguo
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jap.103.a
+		
+		trigger = {
+				TAG = jap
+		}
+	}
+	
+	option = {
+		name = jap.103.b
+
+		trigger = {
+			NOT = {
+				TAG = jap
+			}
+		}
+	}
+}

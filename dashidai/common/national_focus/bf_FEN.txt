@@ -1,0 +1,1514 @@
+focus_tree = {
+id = FEN_focus
+
+country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = FEN
+			}
+		}
+	}
+	
+	default = no
+	#东北霸王
+	focus = {
+		id = donbeibawang
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		x = 13
+		y = 0
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_political_power = 300
+			    add_manpower = 100000
+				}
+	}
+		#从第二次直奉战争中恢复
+	focus = {
+		id = zhifeng
+		icon = GFX_goal_generic_army_doctrines
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeibawang }
+		x = 5
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_equipment_to_stockpile = {
+				  type = infantry_equipment_0
+			    amount = 1000
+				  producer = FEN
+			}
+				}
+	}
+		#整训军队
+	focus = {
+		id = junduei
+		icon = GFX_goal_difangbudui
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = junshi1 }
+		x = 2
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				remove_ideas = FEN_chanyelan
+				add_ideas = youxu
+			}
+				}
+		#创建军事学院
+	focus = {
+		id = junshi1
+		icon = GFX_focus_generic_little_entente
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = guowai }
+		x = 2
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.8
+				uses = 2
+				category = land_doctrine
+			}
+				}
+	}
+	#聘请国外军事人才
+	focus = {
+		id = guowai
+		icon = GFX_goal_generic_intelligence_exchange
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = zhifeng }
+		x = 2
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_ideas = junshi
+			}
+	}
+	#提高军队素质
+	focus = {
+		id = suzhi
+		icon = GFX_goal_generic_cavalry
+		available = {
+			tag = FEN
+		}
+		cost = 5
+		prerequisite = { focus = junshi1 }
+		x = 2
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				army_experience = 200
+			}
+	}
+	#准备插手战争
+	focus = {
+		id = zhanzheng
+		icon = GFX_goal_generic_military_deal
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = zhifeng }
+		x = 6
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_equipment_to_stockpile = {
+				  type = infantry_equipment_0
+			    amount = 1000
+				  producer = FEN
+			}
+				}
+	}
+	#访问直系
+	focus = {
+		id = fangwenzhixi
+		icon = GFX_goal_molotov_ribbentrop_pact
+		available = {
+			tag = FEN
+			CHI = { has_war_with = WHI }
+		}
+		cost = 10
+		prerequisite = { focus = zhanzheng }
+		mutually_exclusive = {
+			focus = weiwenguoming
+		}
+		x = 4
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			add_political_power = 100
+			add_opinion_modifier = { target = WHI modifier = Relationship_improvement }
+			WHI = { add_opinion_modifier = { target = FEN modifier = Relationship_improvement } }
+				}
+	}
+	#支援直系
+	focus = {
+		id = zhiyuanzhixi
+		icon = GFX_focus_generic_support_the_left_right
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = fangwenzhixi }
+		x = 4
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			add_political_power = 500
+			add_opinion_modifier = { target = WHI modifier = Relationship_improvement }
+			WHI = { add_opinion_modifier = { target = FEN modifier = Relationship_improvement } }
+			WHI = { add_equipment_to_stockpile = {
+				  type = infantry_equipment_0
+			    amount = 1000
+				  producer = FEN
+			} 
+			}
+				}
+	}
+	#宣战国民政府
+	focus = {
+		id = xuanzhan
+		icon = GFX_goal_generic_military_deal
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = zhiyuanzhixi }
+		x = 4
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+		   create_wargoal = {
+				type = annex_everything
+				target = CHI
+			}
+			}
+				}
+		#慰问国民政府
+	focus = {
+		id = weiwenguoming
+		icon = GFX_goal_molotov_ribbentrop_pact
+		available = {
+			tag = FEN
+			CHI = { has_war_with = WHI }
+		}
+		cost = 10
+		prerequisite = { focus = zhanzheng }
+		mutually_exclusive = {
+			focus = fangwenzhixi
+		}
+		x = 8
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			add_political_power = 100
+			add_opinion_modifier = { target = CHI modifier = Relationship_improvement }
+			CHI = { add_opinion_modifier = { target = FEN modifier = Relationship_improvement } }
+				}
+	}
+	#与国民政府交易
+	focus = {
+		id = jiaoyi
+		icon = GFX_focus_generic_diplomatic_treaty
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = weiwenguoming  }
+		x = 8
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			 country_event = beifa.13
+			 add_equipment_to_stockpile = {
+				  type = infantry_equipment_0
+			    amount = 10000
+				  producer = CHI
+			}
+				}
+	}
+	#挥师南下！支援北伐!
+	focus = {
+		id = nanxia
+		icon = GFX_goal_generic_political_pressure
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jiaoyi }
+		x = 8
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = WHI
+			}
+				}
+	}
+	#与国民政府和平
+	focus = {
+		id = heping
+		icon = GFX_goal_generic_improve_relations
+		available = {
+			tag = FEN
+		}
+		cost = 5
+		prerequisite = { focus = nanxia }
+		x = 8
+		y = 6
+			ai_will_do = {
+					factor = 50
+				}
+			completion_reward = {
+				 white_peace=CHI
+				}
+	}
+	# 外交之路
+	focus = {
+		id = waijiao
+		icon = GFX_goal_tripartite_pact
+		available = {
+			tag = FEN
+		}
+		cost = 5
+		prerequisite = { focus = donbeibawang }
+		x = 13
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 500
+				}
+	}
+	# 与苏联接触
+	focus = {
+		id = jiechusulian
+		icon = GFX_goal_generic_war_with_comintern
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = waijiao }
+		x = 11
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 100
+				}
+	}
+	# 交好苏联
+	focus = {
+		id = jiaohaosulian
+		icon = GFX_goal_support_communism
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jiechusulian }
+		mutually_exclusive = {focus = tiaoxisulian}
+		x = 10
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 100
+			   add_opinion_modifier = { target = SOV modifier = Relationship_improvement }
+			   SOV = { add_opinion_modifier = { target = FEN modifier = Relationship_improvement } }
+			}
+	}
+	# 调戏苏联
+	focus = {
+		id = tiaoxisulian
+		icon = GFX_focus_AST_squander_bug
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jiechusulian }
+		mutually_exclusive = {focus = jiaohaosulian}
+		x = 12
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 100
+			   add_opinion_modifier = { target = SOV modifier = Rigid }
+			   SOV = { add_opinion_modifier = { target = FEN modifier = Rigid } }
+			}
+	}
+	# 与苏军军事演习
+	focus = {
+		id = sulianjunshi
+		icon = GFX_goal_anschluss
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jiaohaosulian }
+		x = 10
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.8
+				uses = 2
+				category = land_doctrine
+			}
+			country_event = FEN.103
+			}
+	}
+	# 苏联工业援助
+	focus = {
+		id = sulianyuanzhugonye
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = sulianjunshi }
+		x = 10
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+	  }
+	}
+	# 永远的盟友
+	focus = {
+		id = sulianmengyou
+		icon = GFX_focus_generic_soviet_politics
+		available = {
+			tag = FEN
+			NOT = { country_exists = JAP }
+		}
+		cost = 10
+		prerequisite = { focus = sulianyuanzhugonye }
+		x = 10
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			  SOV = {
+				 country_event = { id = beifa.14 }
+			 }
+    }
+	}
+	#骚扰边境线的苏军,掠夺武器。
+	focus = {
+		id = luiduo
+		icon = GFX_focus_generic_soviet_politics
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = tiaoxisulian }
+		x = 12
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			   add_equipment_to_stockpile = {
+				  type = infantry_equipment_0
+			    amount = 5000
+				  producer =  SOV
+			   }
+    }
+	}
+	#积极备战 
+	focus = {
+		id = beizhan
+		icon = GFX_goal_generic_political_pressure
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = luiduo }
+		x = 12
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			   add_equipment_to_stockpile = {
+				  type = infantry_equipment_0
+			    amount = 5000
+				  producer =  FEN
+			   }
+    }
+	}
+	#野望苏联，出师北伐。
+	focus = {
+		id = beifasulian
+		icon = GFX_goal_generic_war_with_comintern
+		available = {
+			tag = FEN
+			NOT = { country_exists = JAP }
+		}
+		cost = 10
+		prerequisite = { focus = jiekou }
+		x = 12
+		y = 7
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+			}
+				}
+	}
+	#制造战争借口
+	focus = {
+		id = jiekou
+		icon = GFX_focus_generic_coastal_fort
+		available = {
+			tag = FEN
+			NOT = { country_exists = JAP }
+		}
+		cost = 10
+		prerequisite = { focus = beizhan }
+		x = 12
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			every_state = { 
+				limit = {
+					is_core_of = SOV 
+				}
+				PREV = { 
+					ADD_STATE_CORE = PREV 
+				}
+			}
+		}
+	}
+	# 接触美国
+	focus = {
+		id = jiechumeiguo
+		icon = GFX_goal_molotov_ribbentrop_pact
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = waijiao }
+		x = 14
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 100
+				 add_opinion_modifier = { target = USA modifier = Relationship_improvement }
+			   USA = { add_opinion_modifier = { target = FEN modifier = Relationship_improvement } }
+				}
+	}
+	# 美国科技援助
+	focus = {
+		id = meiguokejiyuanzhu
+		icon = GFX_goal_generic_scientific_exchange
+		available = {
+			tag = FEN
+			NOT = { has_war_with = USA }
+		}
+		cost = 5
+		prerequisite = { focus = jiechumeiguo }
+		x = 14
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_research_slot = 1
+				}
+	}
+	# 美国援助的物资
+	focus = {
+		id = wuzi
+		icon = GFX_focus_NZL_bob_semple_tank
+		available = {
+			tag = FEN
+			NOT = { has_war_with = USA }
+		}
+		cost = 10
+		prerequisite = { focus = meiguokejiyuanzhu }
+		x = 14
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 create_import = { resource = steel amount = 50 exporter = USA }
+				}
+	}
+	#美械师
+	focus = {
+		id = meixie
+		icon = GFX_goal_difangbudui
+		prerequisite = { focus = wuzi }
+		available = {
+			NOT = { has_war_with = USA }
+		}
+		x = 14
+		y = 5
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			USA = { add_political_power = 150 }
+			hidden_effect = { load_oob = "FEN_meixieshi" }
+			custom_effect_tooltip = FEN_meixieshi
+		}
+	}
+	# 接触日本
+	focus = {
+		id = jiechuJAP
+		icon = GFX_goal_molotov_ribbentrop_pact
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = waijiao }
+		x = 17
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 100
+				}
+	}
+	# 访问日本
+	focus = {
+		id = fangwenriben
+		icon = GFX_goal_anschluss
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jiechuJAP }
+		x = 16
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 100
+				 add_opinion_modifier = { target = JAP modifier = Relationship_improvement }
+			   JAP = { add_opinion_modifier = { target = FEN modifier = Relationship_improvement } }
+				}
+	}
+	#慰问在东北关东军
+	focus = {
+		id = weiwenguandonjun
+		icon = GFX_focus_generic_support_the_left_right
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = fangwenriben }
+		x = 16
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				 add_political_power = 100
+				 add_opinion_modifier = { target = JAP modifier = Relationship_improvement }
+			   JAP = { add_opinion_modifier = { target = FEN modifier = Relationship_improvement } }
+			   add_equipment_to_stockpile = {
+				  type = infantry_equipment_1
+			    amount = 5000
+				  producer =  JAP
+			   }
+				}
+	}
+	#突袭关东军
+	focus = {
+		id = tuxiguandonjun
+		icon = GFX_goal_generic_secret_weapon
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = weiwenguandonjun }
+		x = 16
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			 country_event = FEN.105
+			 add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 10000
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 500
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 300
+				producer = JAP
+			}
+		}
+	}
+	#抢占大连
+	focus = {
+		id = dalian
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10
+		prerequisite = { focus = jiechuJAP }
+		prerequisite = { focus = tuxiguandonjun }
+		x = 18
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					FEN = { transfer_state = 750 }
+					country_event = FEN.106
+				}
+	}
+	#全民皆兵！血战日本
+	focus = {
+		id = xuezhanriben
+		icon = GFX_focus_AST_war_japan
+		available = {
+			tag = FEN
+			 has_war_with = JAP 
+		}
+		cost = 10
+		prerequisite = { focus = dalian }
+		x = 18
+		y = 4
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_timed_idea = {	idea = xuezhan		days = 300	}
+					add_manpower = 100000
+				}
+	}
+	#统一全国
+	focus = {
+		id = zhonhuatonyi
+		icon = GFX_goal_generic_forceful_treaty
+		available = {
+			tag = FEN
+      NOT = { country_exists = JAP }
+		}
+		prerequisite = { focus = xuezhanriben }
+		prerequisite = { focus = tuxiguandonjun }
+		x = 17
+		y = 6
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		  create_wargoal = {
+				type = annex_everything
+				target = CHI
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XSM
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CXC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = PRC
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SHX
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = YIN
+			}create_wargoal = {
+				type = annex_everything
+				target = YUN
+			}
+		}
+	}
+	#东北工业发展
+	focus = {
+		id = donbeigonye
+		icon = GFX_goal_generic_production2
+		available = {
+			tag = FEN
+		}
+		cost = 5.00
+		prerequisite = { focus = donbeibawang }
+		x = 24
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = industrial_bonus
+							bonus = 0.8
+							uses = 2
+							category = industry
+						}
+				}
+	}
+	#战略资源获取
+	focus = {
+		id = ziyuanhuoqu
+		icon = GFX_goal_generic_construction2
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeibawang }
+		x = 24
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_ideas = ziyuan
+				}
+	}
+	#开采东北石油
+	focus = {
+		id = donbeishiyou
+		icon = GFX_goal_generic_oil_refinery
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = ziyuanhuoqu }
+		x = 24
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_resource = {
+				type = oil
+				amount = 30
+				state = 716
+			}
+		}
+	}
+	#发现铁矿
+	focus = {
+		id = donbeitiekuang
+		icon = GFX_goal_generic_construction
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeishiyou }
+		x = 24
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_resource = {
+				type = steel
+				amount = 30
+				state = 754
+			}
+		}
+	}
+	#奉天军械厂
+	focus = {
+		id = fengtianjunxiechang
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeigonye }
+		x = 20
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				753 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#奉天步枪
+	focus = {
+		id = donbeibuqiang
+		icon = GFX_goal_generic_small_arms
+		available = {
+			tag = FEN
+		}
+		cost = 5
+		prerequisite = { focus = fengtianjunxiechang }
+		x = 20
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			set_technology = { 
+				maose_hezipao_1 = 1 
+			}
+		}
+	}
+	#东三省兵工厂
+	focus = {
+		id = donsansheng
+		icon = GFX_goal_generic_construct_mil_factory
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = fengtianjunxiechang }
+		x = 20
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				714 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			717 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			715 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#铁路发展
+	focus = {
+		id = tielufazhan
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeigonye }
+		x = 22
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				715 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+				}
+				754 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+				}
+				716 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 10
+							instant_build = yes
+						}
+					}
+				}
+			}
+	#奉天炮厂
+	focus = {
+		id = paochang
+		icon = GFX_goal_generic_army_artillery2
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = tielufazhan }
+		x = 22
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+				name = arty_bonus
+				bonus = 1
+				uses = 1
+				technology = gw_artillery
+			}
+		}
+	}
+	#奉天科学研究所
+	focus = {
+		id = fengtianyanjiousuo
+		icon = GFX_focus_research
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = paochang }
+		prerequisite = { focus = donsansheng }
+		x = 21
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_research_slot = 1
+		}
+	}
+	#基础建筑速度
+	focus = {
+		id = jianzhusudu
+		icon = GFX_goal_generic_construct_infrastructure
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = fengtianyanjiousuo }
+		x = 21
+		y = 6
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_ideas = donbeijianzhu
+		}
+	}
+	#科技发展
+	focus = {
+		id = dongbeikejifazhan
+		icon = GFX_focus_research
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = fengtianyanjiousuo }
+		x = 21
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_ideas = kejifazhanFEN
+		}
+	}
+	#奉天粮秣厂
+	focus = {
+		id = liangzhuchang
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeigonye }
+		x = 26
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				753 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#东北轻工业
+	focus = {
+		id = qinggonye
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = liangzhuchang }
+		x = 26
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				717 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#轻工业发展
+	focus = {
+		id = qinggonyefazhan
+		icon = GFX_goal_generic_construct_civ_factory
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = qinggonye }
+		x = 26
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				754 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#检阅三军
+	focus = {
+		id = jianyuesanjun
+		icon = GFX_goal_demand_sudetenland
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeibawang }
+		x = 32
+		y = 1
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			army_experience = 100
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = air_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = naval_doctrine
+						}
+		}
+	}
+	#东北陆军
+	focus = {
+		id = donbeilujun
+		icon = GFX_goal_difangbudui
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jianyuesanjun }
+		x = 30
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = artillery
+						}
+		}
+	}
+	#机械化步兵
+	focus = {
+		id = jixiehuabubing
+		icon = GFX_goal_generic_army_motorized
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeilujun }
+		x = 30
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = motorized_equipment
+					}
+		}
+	}
+	#坦克军
+	focus = {
+		id = tankejun
+		icon = GFX_goal_generic_army_tanks
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jixiehuabubing }
+		x = 30
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+		completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = artillery
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = armor
+					}
+		}
+	}
+	#东北航空工厂
+	focus = {
+		id = dongbeikongjun
+		icon = GFX_goal_generic_build_airforce
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jianyuesanjun }
+		x = 32
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = air_equipment
+						}
+				715 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}		
+		}
+	}
+	#东北空军发展
+	focus = {
+		id = donbeilujunfazhan
+		icon = GFX_goal_generic_build_airforce
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = dongbeikongjun }
+		x = 32
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = air_equipment
+						}
+		}
+	}
+	#陆空结合
+	focus = {
+		id = lukonjiehe
+		icon = GFX_goal_generic_air_bomber
+		available = {
+			tag = FEN
+		}
+		cost = 12
+		prerequisite = { focus = donbeilujunfazhan }
+		x = 32
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = battlefield_support_tree
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = armor
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = air_equipment
+				}
+		}
+	}
+	#东北海军发展
+	focus = {
+		id = donbeihaijunfazhan
+		icon = GFX_goal_generic_amphibious_assault
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jianyuesanjun }
+		x = 34
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = naval_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = dd_tech
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = cl_tech
+						}
+				610 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+			609 = {
+									remove_building = {
+											type = naval_base
+											level = 10
+											province = 7191
+											instant_build = yes
+										}
+								}		
+		}
+	}
+	#东北海军产业
+	focus = {
+		id = dongbeikongjunchanye
+		icon = GFX_goal_generic_navy_cruiser
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = donbeihaijunfazhan }
+		x = 34
+		y = 3
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = naval_equipment
+						}
+						navy_experience = 50	
+		}
+	}
+	#海军基础
+	focus = {
+		id = haijunjichu
+		icon = GFX_goal_generic_amphibious_assault
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = jianyuesanjun }
+		x = 36
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				609 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
+		}
+	}
+	#奉天水师的未来
+	focus = {
+		id = weilai
+		icon = GFX_goal_generic_navy_battleship
+		available = {
+			tag = FEN
+		}
+		cost = 10
+		prerequisite = { focus = haijunjichu }
+		prerequisite = { focus = donbeihaijunfazhan }
+		x = 34
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+				add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = air_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cat_base_strike
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cv_tech
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 1
+							category = air_equipment
+						}
+						add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = naval_doctrine
+						}
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 3
+							category = naval_equipment
+						}
+		}
+	}
+}	

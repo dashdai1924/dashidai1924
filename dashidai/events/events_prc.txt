@@ -1,0 +1,186 @@
+﻿#########################
+## beifa Mod Events ##
+#########################
+
+add_namespace = beifa
+
+#林彪加入队伍
+country_event = {
+	id = beifa.21
+	title = beifa.21.t
+	desc = beifa.21.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.21.a
+		  create_corps_commander = {
+	           name = "林彪"
+	           portrait_path = "gfx/leaders/PRC/PRC_linbiao.dds"
+	           traits = { trickster trait_engineer winter_specialist panzer_leader }
+	            skill = 4
+     }
+	}
+}
+#粟裕加入队伍
+country_event = {
+	id = beifa.22
+	title = beifa.22.t
+	desc = beifa.22.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.22.a
+		  create_corps_commander = {
+	           name = "粟裕"
+	           portrait_path = "gfx/leaders/PRC/PRC_suyu.dds"
+	           traits = { fortress_buster panzer_leader trait_mountaineer }
+	            skill = 2
+     }
+	}
+}
+#陈毅加入队伍
+country_event = {
+	id = beifa.23
+	title = beifa.23.t
+	desc = beifa.23.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.23.a
+		  create_corps_commander = {
+	           name = "陈毅"
+	           portrait_path = "gfx/leaders/PRC/PRC_chenyi.dds"
+	           traits = { urban_assault_specialist naval_invader }
+	            skill = 3
+     }
+	}
+}
+#李云龙加入队伍
+country_event = {
+	id = beifa.24
+	title = beifa.24.t
+	desc = beifa.24.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.24.a
+		  create_corps_commander = {
+	           name = "李云龙"
+	           portrait_path = "gfx/leaders/PRC/PRC_liyunlong.dds"
+	           traits = { trickster fortress_buster }
+	            skill = 6
+     }
+	}
+}
+#马步芳加入队伍
+country_event = {
+	id = beifa.25
+	title = beifa.25.t
+	desc = beifa.25.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.25.a
+		  create_field_marshal = {
+	           name = "马步芳"
+	           portrait_path = "gfx/leaders/XSM/mabufang.dds"
+	           traits = { trickster }
+	            skill = 4
+     }
+	}
+	option = {
+		name = beifa.25.b
+	}
+}
+#阎锡山加入队伍
+country_event = {
+	id = beifa.26
+	title = beifa.26.t
+	desc = beifa.26.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.26.a
+		  create_field_marshal = {
+	           name = "阎锡山"
+	           portrait_path = "gfx/leaders/SHX/yanxishan.dds"
+	           traits = { defensive_doctrine }
+	            skill = 4
+     }
+	}
+	option = {
+		name = beifa.26.b
+	}
+}
+#楚云飞加入队伍
+country_event = {
+	id = beifa.27
+	title = beifa.27.t
+	desc = beifa.27.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.27.a
+		  create_corps_commander = {
+	           name = "楚云飞"
+	           portrait_path = "gfx/leaders/SHX/CHI_chuyunfei.dds"
+	           traits = { trickster winter_specialist trait_engineer fortress_buster panzer_leader commando }
+	            skill = 4
+     }
+	}
+	option = {
+		name = beifa.27.b
+	}
+}
+# 长征开始！
+country_event = {
+	id = beifa.28
+	title = beifa.28.t
+	desc = beifa.28.d
+	picture = GFX_CHI_leader_beifa
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+	      tag = PRC
+	      date > 1930.1.1
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	
+	option = {
+		name = beifa.28.a
+		add_ideas = changzheng
+		CHI = {
+				country_event = { id = beifa.29 }
+			}
+		CHI = { transfer_state = 594 }
+		CHI = { transfer_state = 744 }
+		CHI = { transfer_state = 747 }
+		CHI = { transfer_state = 600 }
+		PRC = { transfer_state = 622 }
+	}
+}

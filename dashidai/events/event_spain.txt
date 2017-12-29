@@ -1,0 +1,29 @@
+add_namespace = spain
+#意大利影响着我们的政治
+country_event = {
+	id = spain.11
+	title = spain.11.t
+	desc = spain.11.d
+	picture = news_event_069
+
+	is_triggered_only = yes
+
+	option = {
+		name = spain.11.a
+			hidden_effect = {
+					set_politics = {
+                        parties = {
+                                democratic = {
+                                        popularity = 80
+                                    }
+                                fascism = {
+                                        popularity = 10
+                                    }
+                                communism = {
+                                        popularity = 10
+                                    }
+                            }
+                    }
+			}
+	}
+}

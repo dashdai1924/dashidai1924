@@ -1,0 +1,189 @@
+#########################
+## FEN Mod Events ##
+#########################
+
+add_namespace = FEN
+
+#军事演习
+news_event = {
+	id = FEN.103
+	title = FEN.103.t
+	desc = FEN.103.d
+	picture = GFX_FEN_leader_beifajun
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FEN.103.a
+		
+		trigger = {
+				TAG = FEN
+		}
+	}
+	
+	option = {
+		name = FEN.103.b
+
+		trigger = {
+			NOT = {
+				TAG = FEN
+			}
+		}
+	}
+}
+#奉系加入共产国际
+news_event = {
+	id = FEN.104
+	title = FEN.104.t
+	desc = FEN.104.d
+	picture = GFX_CHI_leader_gonchang
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FEN.104.a
+		
+		trigger = {
+				TAG = FEN
+		}
+	}
+	
+	option = {
+		name = FEN.104.b
+
+		trigger = {
+			NOT = {
+				TAG = FEN
+				TAG = SOV
+			}
+		}
+	}
+	
+	option = {
+		name = FEN.104.c
+		
+		trigger = {
+				TAG = SOV
+		}
+	}
+}
+#奉军突袭日本关东军
+news_event = {
+	id = FEN.105
+	title = FEN.105.t
+	desc = FEN.105.d
+	picture = GFX_CHI_leader_qixi
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FEN.105.a
+		
+		trigger = {
+				TAG = FEN
+		}
+	}
+	
+	option = {
+		name = FEN.105.b
+
+		trigger = {
+			NOT = {
+				TAG = FEN
+				TAG = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = FEN.105.c
+		
+		trigger = {
+				TAG = JAP
+		}
+	}
+}
+
+#奉军占领大连
+news_event = {
+	id = FEN.106
+	title = FEN.106.t
+	desc = FEN.106.d
+	picture = GFX_CHI_leader_menggu
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FEN.106.a
+		
+		trigger = {
+				TAG = FEN
+		}
+	}
+	
+	option = {
+		name = FEN.106.b
+
+		trigger = {
+			NOT = {
+				TAG = FEN
+				TAG = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = FEN.106.c
+		
+		trigger = {
+				TAG = JAP
+		}
+	}
+}
+
+#皇姑屯事件
+news_event = {
+	id = FEN.107
+	title = FEN.107.t
+	desc = FEN.107.d
+	picture = GFX_CHI_leader_huanhguchuen
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FEN.107.a
+		
+		trigger = {
+				TAG = FEN
+		}
+	}
+	
+	option = {
+		name = FEN.107.b
+
+		trigger = {
+			NOT = {
+				TAG = FEN
+				TAG = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = FEN.107.c
+		
+		trigger = {
+				TAG = JAP
+		}
+	}
+}

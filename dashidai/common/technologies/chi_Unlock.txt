@@ -1,0 +1,50 @@
+technologies = {
+	
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+
+	
+	
+	meixie_army_0 = {
+	
+		enable_subunits = {
+			meixie_army
+		}
+		
+	}
+	
+	liberation_army_0 = {
+	
+		enable_subunits = {
+			liberation_army
+		}
+		
+	}
+	
+	pole_army_0 = {
+	
+		enable_subunits = {
+			pole_army
+		}
+		
+	}
+	
+	zhonyangjun_unit_3 = {
+	
+		enable_subunits = {
+			zhonyangjun_unit
+		}
+		
+	}
+	
+	
+}

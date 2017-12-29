@@ -1,0 +1,790 @@
+﻿#########################
+## beifa Mod Events ##
+#########################
+
+add_namespace = beifa
+
+# 九一八
+country_event = {
+	id = beifa.2
+	title = beifa.2.t
+	desc = beifa.2.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = beifa.2.a
+		ai_chance = {
+			factor = 0
+		}
+		news_event = { hours = 6 id = chi.109 }
+		create_faction = "tonyizhanxian"
+		CHI = { add_to_faction = FEN }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "FEN"
+				value = 200
+			}
+		}
+		country_event = { id = beifa.3 }
+		country_event = { id = beifa.4 }
+		country_event = { id = beifa.5 }
+		country_event = { id = beifa.6 }
+		country_event = { id = beifa.7 }
+		country_event = { id = beifa.8 }
+		country_event = { id = beifa.9 }
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+	}
+	option = {
+		name = beifa.2.b
+		ai_chance = {
+			factor = 80
+		}
+		FEN = {
+				country_event = { id = beifa.12 }
+			}
+	}
+}
+#晋入统一战线
+country_event = {
+	id = beifa.3
+	title = beifa.3.t
+	desc = beifa.3.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.3.a
+		CHI = { add_to_faction = SHX }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "SHX"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = testqingnews.17 }
+		}
+	}
+}
+#三马入统一战线
+country_event = {
+	id = beifa.4
+	title = beifa.4.t
+	desc = beifa.4.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.4.a
+		CHI = { add_to_faction = XSM }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "XSM"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = testqingnews.17 }
+		}
+	}
+}
+#川军入统一战线
+country_event = {
+	id = beifa.5
+	title = beifa.5.t
+	desc = beifa.5.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.5.a
+		CHI = { add_to_faction = CXC }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "CXC"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = testqingnews.17 }
+		}
+	}
+}
+#桂入统一战线
+country_event = {
+	id = beifa.6
+	title = beifa.6.t
+	desc = beifa.6.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.6.a
+		CHI = { add_to_faction = GXC }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "GXC"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = testqingnews.17 }
+		}
+	}
+}
+#中共入统一战线
+country_event = {
+	id = beifa.7
+	title = beifa.7.t
+	desc = beifa.7.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.7.a
+		CHI = { add_to_faction = PRC }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "PRC"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = testqingnews.17 }
+		}
+	}
+}
+#黔入统一战线
+country_event = {
+	id = beifa.8
+	title = beifa.8.t
+	desc = beifa.8.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.8.a
+		CHI = { add_to_faction = YIN }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "YIN"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = testqingnews.17 }
+		}
+	}
+}
+#云南入统一战线
+country_event = {
+	id = beifa.9
+	title = beifa.9.t
+	desc = beifa.9.d
+	picture = GFX_CHI_leader_jiaru
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.9.a
+		CHI = { add_to_faction = YUN }
+		CHI = {
+			add_ai_strategy = {
+				type = alliance
+				id = "YUN"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = testqingnews.17 }
+		}
+	}
+}
+# 南昌起义
+country_event = {
+	id = beifa.10
+	title = beifa.10.t
+	desc = beifa.10.d
+	picture = GFX_CHI_leader_qiyi
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = beifa.10.a
+		country_event = { id = beifa.20 }
+		PRC = { transfer_state = 600 }
+			declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+		PRC = { custom_effect_tooltip = PRC_honjun
+		hidden_effect = { load_oob = "PRC_honjun" } 
+		            }
+	}
+}
+# 和平
+country_event = {
+	id = beifa.11
+	title = beifa.11.t
+	desc = beifa.11.d
+	picture = GFX_CHI_leader_beifa
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+	      tag = CHI
+	      date > 1927.8.7
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = beifa.11.a
+		CHI = {
+				 white_peace=PRC
+			}
+	}
+}
+#选择
+country_event = {
+	id = beifa.20
+	title = beifa.20.t
+	desc = beifa.20.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.20.a
+		hidden_effect = { PRC = { change_tag_from = CHI } }
+	}
+	option = {
+		name = beifa.20.b
+	}
+}
+#共产党逃跑
+country_event = {
+	id = beifa.29
+	title = beifa.29.t
+	desc = beifa.29.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.29.a
+	}
+}
+#陈炯明的逃亡
+country_event = {
+	id = beifa.101
+	title = beifa.101.t
+	desc = beifa.101.d
+	picture = GFX_CHI_leader_zhonguodonbei
+
+	immediate = {
+		593 = {
+            set_border_war = no
+        }
+	}
+	mean_time_to_happen = { days = 30 }
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.101.a
+	}
+}
+#黄埔的将军
+country_event = {
+	id = beifa.102
+	title = beifa.102.t
+	desc = beifa.102.d
+	picture = GFX_CHI_leader_zhonguodonbei
+
+	is_triggered_only = yes
+	
+	option = {
+		name = beifa.102.a
+		hidden_effect = {
+		create_field_marshal = {
+	name = "蒋介石"
+	portrait_path = "gfx/leaders/CHI/jiangjieshi.dds"
+	traits = {  }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "唐生智"
+	portrait_path = "gfx/leaders/CHI/CHI_tangshengzhi.dds"
+	traits = {  }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "何应钦"
+	portrait_path = "gfx/leaders/CHI/CHI_heyingqin.dds"
+	traits = { logistics_wizard }
+	skill = 3
+}
+
+create_field_marshal = {
+	name = "林伯渠"
+	portrait_path = "gfx/leaders/CHI/lingboxu.tga"
+	traits = {  logistics_wizard offensive_doctrine  fast_planner }
+	skill = 5
+}
+
+create_field_marshal = {
+	name = "薛岳"
+	portrait_path = "gfx/leaders/CHI/xueyue.dds"
+	traits = {  logistics_wizard offensive_doctrine  fast_planner }
+	skill = 5
+}
+
+create_corps_commander = {
+	name = "陈诚"
+	portrait_path = "gfx/leaders/CHI/chencheng.dds"
+	traits = {  winter_specialist }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "桂永清"
+	portrait_path = "gfx/leaders/CHI/guiyongqing.dds"
+	traits = {  seawolf blockade_runner superior_tactician spotter }
+	skill = 3
+}
+		}
+	}
+}
+#国民党第一次全国代表大会
+country_event = {
+	id = beifa.103
+	title = beifa.103.t
+	desc = beifa.103.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	fire_only_once = yes
+	trigger = {
+		tag = CHI
+		date < 1924.1.20
+	}
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = beifa.103.a
+		hidden_effect = {
+			news_event = { id = chi.112 }
+			add_popularity = { ideology = communism popularity = 0.4 }
+			set_country_flag = 第一次国共合作
+			if = {
+                limit = {
+                        has_idea = CHI_diyiciguogonghezuo
+                    }
+                remove_ideas = CHI_diyiciguogonghezuo
+                add_ideas = CHI_diyiciguogonghezuo2
+            }
+		}
+	}
+	option = {
+		name = beifa.103.b
+		hidden_effect = { set_country_flag = 国共合作破裂 }
+	}
+}
+#宁汉分裂
+country_event = {
+	id = beifa.100
+	title = beifa.100.t
+	desc = beifa.100.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	trigger = {
+		tag = CHI
+		date > 1927.4.14
+		613 = {
+			owner = CHI
+		}
+		746 = {
+			owner = CHI
+		}
+	}
+	immediate = {
+		WUH = {
+			transfer_state = 746
+			transfer_state = 602
+			transfer_state = 620
+			transfer_state = 745
+			load_oob = "WUH_1936"
+			load_oob = "WUH - wuhang"
+		}
+		ZZK = {
+			transfer_state = 593
+			transfer_state = 758
+			transfer_state = 757
+			transfer_state = 592
+			transfer_state = 759
+			transfer_state = 760
+			transfer_state = 591
+			load_oob = "ZZK_1936"
+			load_oob = "ZZK - Chen Ji Tang"
+		}
+		add_named_threat = { threat = 0.01 name = 宁汉分裂 }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+		
+	option = {
+		name = beifa.100.a
+	}
+}
+#东北的暗箱操作
+country_event = {
+	id = beifa.104
+	title = beifa.104.t
+	desc = beifa.104.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	trigger = {
+		tag = CHI
+		date > 1927.4.14
+	}
+	immediate = {
+		FEN = {
+			transfer_state = 755
+			transfer_state = 612
+			transfer_state = 611
+			transfer_state = 609
+			transfer_state = 608
+			transfer_state = 614
+			transfer_state = 597
+			transfer_state = 607
+			transfer_state = 606
+			transfer_state = 598
+			transfer_state = 762
+		}
+		CHI = {
+			white_peace = FEN
+			white_peace = WHI
+			white_peace = WAN
+			annex_country = { target = WHI transfer_troops = yes }
+			annex_country = { target = WAN transfer_troops = yes }
+		}
+		add_named_threat = { threat = 0.01 name = 张作霖整合北洋 }
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+		
+	option = {
+		name = beifa.104.a
+	}
+}
+#江浙战争
+country_event = {
+	id = beifa.105
+	title = beifa.105.t
+	desc = beifa.105.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		WAN = {
+			declare_war_on = { target = WHI type = annex_everything }
+			transfer_state = 598
+			transfer_state = 613
+			transfer_state = 756
+		}
+		set_global_flag = 江浙战争开始
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.105.a
+	}
+}
+#江浙战争停战
+country_event = {
+	id = beifa.106
+	title = beifa.106.t
+	desc = beifa.106.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	trigger = {
+		tag = WAN
+		600 = { is_controlled_by = WAN }
+		600 = { is_owned_by = WHI }
+		747 = { is_controlled_by = WAN }
+		747 = { is_owned_by = WHI }
+		606 = { is_controlled_by = WAN }
+		606 = { is_owned_by = WHI }
+		NOT = { has_global_flag = 江浙战争结束 }
+		has_global_flag = 江浙战争开始
+	}
+	immediate = {
+		set_global_flag = 江浙战争结束
+		ZZN = {
+			transfer_state = 598
+			transfer_state = 613
+			transfer_state = 756
+			load_oob = "ZZN_1936"
+			load_oob = "ZZN - Qi Xie Yuan"
+		}
+		ZZL = {
+			transfer_state = 600
+			load_oob = "ZZL_1936"
+			load_oob = "ZZL - Cai Cheng Xun"
+		}
+		ZZM = {
+			transfer_state = 606
+			transfer_state = 747
+			load_oob = "ZZM_1936"
+			load_oob = "ZZM - Ma Lian Jia"
+		}
+		ZZO = {
+			transfer_state = 597
+			load_oob = "ZZO_1936"
+			load_oob = "ZZO - Zheng Shi Qi"
+		}
+		WAN = {
+			white_peace = WHI
+			annex_country = { target = ZZE transfer_troops = yes }
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	is_triggered_only = no
+		
+	option = {
+		name = beifa.106.a
+	}
+}
+#第二次直奉战争
+country_event = {
+	id = beifa.107
+	title = beifa.107.t
+	desc = beifa.107.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		FEN = {
+			declare_war_on = { target = WHI type = annex_everything }
+			declare_war_on = { target = ZZO type = annex_everything }
+			declare_war_on = { target = ZZN type = annex_everything }
+			declare_war_on = { target = ZZM type = annex_everything }
+		}
+		set_global_flag = 第二次直奉战争开始
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.107.a
+	}
+}
+#国民军叛乱
+country_event = {
+	id = beifa.108
+	title = beifa.108.t
+	desc = beifa.108.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		ZZQ = {
+			transfer_state = 607
+			transfer_state = 614
+			transfer_state = 608
+			transfer_state = 609
+			transfer_state = 611
+			transfer_state = 612
+			transfer_state = 755
+			transfer_state = 766
+			load_oob = "ZZQ_1936"
+			load_oob = "ZZQ - Feng Yu Xiang"
+		}
+		set_global_flag = 国民军叛乱开始
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.108.a
+	}
+}
+#镇嵩军憨玉琨部攻入洛阳，吴佩孚宣布下野
+country_event = {
+	id = beifa.109
+	title = beifa.109.t
+	desc = beifa.109.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		ZZJ = {
+			transfer_state = 622
+			transfer_state = 765
+		}
+		ZZP = {
+			transfer_state = 762
+			load_oob = "ZZP_1936"
+			load_oob = "ZZP - Han Yu Kun"
+		}
+		set_global_flag = 镇崇军西迁
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.109.a
+	}
+}
+#吞并江西
+country_event = {
+	id = beifa.110
+	title = beifa.110.t
+	desc = beifa.110.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		WAN = {
+			annex_country = { target = ZZL transfer_troops = yes }
+		}
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.110.a
+	}
+}
+#浙奉战争
+country_event = {
+	id = beifa.111
+	title = beifa.111.t
+	desc = beifa.111.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		WAN = {
+			declare_war_on = { target = FEN type = annex_everything }
+		}
+		ZZQ = {
+			declare_war_on = { target = FEN type = annex_everything }
+		}
+		set_global_flag = 浙奉战争开始
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.111.a
+	}
+}
+#萧耀南不欢迎吴佩孚
+country_event = {
+	id = beifa.112
+	title = beifa.112.t
+	desc = beifa.112.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		WHI = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "萧耀南"
+				desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+				picture = "xiaoyaonan.dds"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = { }
+			}
+		}
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.112.a
+	}
+}
+#浙奉、第二次直奉战争停战
+country_event = {
+	id = beifa.113
+	title = beifa.113.t
+	desc = beifa.113.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	trigger = {
+		598 = { is_controlled_by = WAN }
+		598 = { is_owned_by = FEN }
+		608 = { is_controlled_by = ZZQ }
+		608 = { is_owned_by = FEN }
+		NOT = { has_global_flag = 浙奉战争结束 }
+		has_global_flag = 浙奉战争开始
+		tag = WAN
+	}
+	immediate = {
+		set_global_flag = 浙奉战争结束
+		ZZQ = {
+			white_peace = FEN
+		}
+		WAN = {
+			white_peace = FEN
+		}
+		WHI = {
+			white_peace = FEN
+		}
+		ZZO = {
+			white_peace = FEN
+		}
+		ZZN = {
+			white_peace = FEN
+		}
+		ZZM = {
+			white_peace = FEN
+		}
+	}
+	mean_time_to_happen = {
+		days = 2
+	}
+	is_triggered_only = no
+		
+	option = {
+		name = beifa.113.a
+	}
+}
+#晋绥军的暗箱操作
+country_event = {
+	id = beifa.114
+	title = beifa.114.t
+	desc = beifa.114.d
+	picture = GFX_CHI_leader_zhonguodonbei
+	immediate = {
+		SHX = {
+			transfer_state = 766
+		}
+	}
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.114.a
+	}
+}

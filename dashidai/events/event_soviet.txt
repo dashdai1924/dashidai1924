@@ -1,0 +1,17 @@
+add_namespace = soviet
+#加入共产国际
+country_event = {
+	id = soviet.64
+	title = soviet.64.t
+	desc = soviet.64.d
+	picture = news_event_017
+
+	is_triggered_only = yes
+
+	option = {
+		name = soviet.64.a
+			hidden_effect = {
+					add_to_faction = ITA
+			}
+	}
+}

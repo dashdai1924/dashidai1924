@@ -1,0 +1,167 @@
+ideas = {
+
+country = {
+	#恶性通货膨胀
+     WHI_tonghuopengzhang = {
+            picture = great_depression
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.15
+                industrial_capacity_factory = -0.10
+				line_change_production_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.15
+                local_resources_factor = -0.10
+            }
+        }
+		
+		#待兴的产业
+        WHI_chanyelan = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			} 
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.15
+				line_change_production_efficiency_factor = -0.30
+				research_time_factor = 0.30
+			}
+			
+		}	
+	WHI_101 = {
+			
+		allowed = {
+			original_tag = YXC
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+			
+		removal_cost = -1
+
+		picture = generic_manpower_bonus
+		
+		modifier = {
+			reliability_factor = 0.1
+			defence = 0.05
+			offence = 0.05
+			army_infantry_attack_factor = 0.05
+			army_infantry_defence_factor = 0.05
+		}
+	}
+
+		WHI_100 = {
+			picture = FRA_fortification_focus
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			equipment_bonus = {
+			infantry_equipment = {
+				reliability = 0.10 build_cost_ic = -0.20
+			}
+			artillery_equipment = {
+				reliability = 0.10 build_cost_ic = -0.20
+			}
+		}
+			}
+
+		WHI_102 = {
+
+			picture = generic_coastal_defense_ships
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = WHI
+			}
+			
+			equipment_bonus = {
+				capital_ship = {
+					armor_value = 0.1
+					attack = 0.1
+					build_cost_ic = -0.3
+					instant = yes
+				}    
+			}
+		}
+
+		WHI_103 = {
+
+			picture = generic_coastal_defense_ships
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = WHI
+			}
+			
+			equipment_bonus = {
+				screen_ship = {
+					armor_value = 0.2
+					attack = 0.2
+					build_cost_ic = -0.3
+					instant = yes
+				}    
+			}
+		}
+
+		WHI_104 = {
+			picture = raj_risk_of_famine
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.15
+			production_speed_buildings_factor = 0.15
+			}
+		}
+
+		WHI_105 = {
+			picture = raj_risk_of_famine
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+                                 industrial_capacity_factory = 0.1
+                                 industrial_capacity_dockyard = 0.1
+			}
+		}
+
+	WHI_106 = {
+			
+		allowed = {
+                        original_tag = WHI
+			always = no
+		}
+
+		allowed_civil_war = {
+			NOT = {
+				has_government = democratic
+			}
+		}
+			
+		removal_cost = -1
+
+		picture = generic_spy_coup
+		
+		modifier = {
+			unity_factor = 0.1
+                        local_org_regain = 0.15
+                        army_org_Factor = 0.15
+			conscription = 0.05
+		}
+	}
+		}
+    }

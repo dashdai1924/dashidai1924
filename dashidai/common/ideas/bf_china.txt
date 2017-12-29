@@ -1,0 +1,340 @@
+ideas = {
+	country = {
+		#湖南省宪法
+			ZZD_hunansxianfa = {
+			picture = air_support_focus
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				unity_factor = 0.10
+				political_power_factor = -0.10
+				research_time_factor = -0.05
+            }
+			}
+		#自己的事
+			CHI_thisischinesesthing = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				unity_factor = 0.9
+				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+				partisan_effect = -1
+				conscription = 0.25
+				land_reinforce_rate = 0.2
+				recon_factor = 0.1
+				drift_defence_factor = 0.9
+				planning_speed = 0.10
+            }
+			}
+		#与共产党合作2 - 不稳定的根据地
+			CHI_diyiciguogonghezuo3 = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				unity_factor = -0.15
+				army_morale_factor = -0.10
+				army_org_Factor = -0.03
+				training_time_army_factor = 0.07
+				research_time_factor = 0.4
+				industrial_capacity_factory = -0.08
+				max_planning = -0.35
+				planning_speed = -0.18
+				recon_factor = -0.06
+            }
+			}
+		#与共产党合作 - 不稳定的根据地
+			CHI_diyiciguogonghezuo2 = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				unity_factor = -0.15
+				army_morale_factor = -0.15
+				army_org_Factor = -0.04
+				training_time_army_factor = 0.08
+				research_time_factor = 0.4
+				industrial_capacity_factory = -0.08
+				max_planning = -0.4
+				planning_speed = -0.20
+				recon_factor = -0.08
+            }
+			}
+		#不稳定的根据地
+			CHI_diyiciguogonghezuo = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				unity_factor = -0.2
+				army_morale_factor = -0.2
+				army_org_Factor = -0.05
+				training_time_army_factor = 0.15
+				research_time_factor = 0.5
+				industrial_capacity_factory = -0.1
+				max_planning = -0.5
+				planning_speed = -0.25
+				recon_factor = -0.1
+            }
+			}
+		#落后军队
+			CHI_luohoujundui_wenti = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				army_org_Factor = -0.10
+				army_speed_factor = -0.10
+				army_attack_factor = -0.10
+				army_morale_factor = -0.05
+				supply_consumption_factor = -0.05
+				training_time_army_factor = -0.10
+				army_infantry_defence_factor = -0.10
+            }
+			}
+		#军阀技巧
+			CHI_junfadejiqiao = {
+			picture = FRA_matignon_agreements
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				consumer_goods_factor = -0.15
+				unity_factor = -0.10
+				political_power_factor = -0.10
+				conscription_factor = 0.10
+				research_time_factor = 0.05
+            }
+			}
+		#农业国
+			CHI_danongyeguoziguyilai_wenti = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				supply_consumption_factor = -0.05
+				unity_factor = 0.10
+				consumer_goods_factor = -0.025
+				production_speed_buildings_factor = -0.10
+				research_time_factor = 0.05
+				conscription_factor = -0.30
+            }
+			}
+		#低效行政
+			CHI_dixiaoxingzheng_wenti = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+				consumer_goods_factor = 0.05
+                conscription_factor = -0.25
+				production_speed_buildings_factor = -0.20
+				research_time_factor = 0.10
+            }
+			}
+		#高自治度
+			CHI_gaozizhidu_wenti = {
+			picture = generic_disjointed_gov
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                consumer_goods_factor = -0.025
+				conscription_factor = -0.05
+				production_speed_buildings_factor = -0.10
+				local_resources_factor = -0.15
+				unity_factor = -0.10
+            }
+			}
+	#恶性通货膨胀-减轻1
+	CHI_tonghuopengzhang1 = {
+			picture = great_depression
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.12
+                industrial_capacity_factory = -0.08
+				line_change_production_efficiency_factor = -0.12
+                production_speed_buildings_factor = -0.12
+                local_resources_factor = -0.08
+            }
+	}
+	#恶性通货膨胀
+     CHI_tonghuopengzhang = {
+            picture = great_depression
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.15
+                industrial_capacity_factory = -0.10
+				line_change_production_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.15
+                local_resources_factor = -0.10
+            }
+        }
+		
+		#待兴的产业
+        CHI_chanyelan = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			} 
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.15
+				line_change_production_efficiency_factor = -0.30
+				research_time_factor = 0.30
+			}
+			
+		}	
+		
+		#提升产业
+        chanyetisheng = {
+			picture = generic_victors_of_ww1
+			allowed = {
+				always = no
+			} 
+			removal_cost = -1
+			modifier = {
+				line_change_production_efficiency_factor = 0.30
+			}
+			
+		}	
+		
+		#统一中国的决心
+		CHI_juexin = {
+			removal_cost = -1
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_disjointed_gov
+			
+			modifier = {
+                unity_factor = 0.5
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+				drift_defence_factor = 0.75
+				max_planning = 3
+				recon_factor = 0.05
+				conscription = 0.05
+				land_reinforce_rate = 0.05
+			}
+		}
+		
+		#留学生回来了
+        CHI_liouxuesheng = {
+			picture = generic_research_bonus
+			allowed = {
+				always = no
+			} 
+			removal_cost = -1
+			modifier = {
+				research_time_factor = -0.30
+			}
+			
+		}
+		
+		#腐败的政府
+     fubaidezhengfu = {
+            picture = SOV_scientist_defect
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                research_time_factor = 0.50
+                local_resources_factor = -0.10
+                industrial_capacity_factory  = -0.4
+                production_speed_buildings_factor = -0.50
+            }
+        }
+        
+     #苏联工人
+     sulian = {
+            picture = generic_production_bonus
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.20
+            }
+        }
+        
+        #中国工人
+     zhonguogonren = {
+            picture = generic_production_bonus
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.05
+            }
+        }
+        
+         #工业强国
+     gonyeqiangguo = {
+            picture = generic_wall_line
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = 0.40
+                industrial_capacity_factory  = 0.3
+                local_resources_factor = 0.2
+            }
+        }
+           #人才辈出
+     rencaibeichu = {
+            picture = generic_research_bonus
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                research_time_factor = -0.30
+            }
+        }
+        
+        #黄埔精神
+     huangpu = {
+            picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                training_time_army_factor = -0.10
+			         experience_loss_factor = -0.05
+			         army_org_Factor = 0.05
+            }
+        }
+    }
+}

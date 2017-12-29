@@ -1,0 +1,66 @@
+state=
+{
+	id=596
+	name="STATE_596"
+	manpower = 21230700
+	state_category = city
+	history=
+	{
+		owner = WAN
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		victory_points = { 
+			9974 1 
+		}
+		victory_points = { 
+			7191 1 
+		}
+		
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+
+			7191 = {
+				naval_base = 1
+			}
+			9974 = {
+				naval_base = 1
+			}
+			1055 = {
+				naval_base = 1
+			}
+		}
+	}
+	provinces={
+		1055 1096 1168 1195 4013 4042 4099 7058 7086 7146 7174 7191 9944 9972 9974 10014 10058 10086 10101 11920 11947 11991 12059 
+	}
+}

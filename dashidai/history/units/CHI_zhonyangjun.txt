@@ -1,0 +1,149 @@
+﻿division_template = {
+	name = "中央军"
+	regiments = {
+		zhonyangjun_unit = { x = 0 y = 0 }
+		zhonyangjun_unit = { x = 0 y = 1 }
+		zhonyangjun_unit = { x = 0 y = 2 }
+		zhonyangjun_unit = { x = 1 y = 0 }
+		zhonyangjun_unit = { x = 1 y = 1 }
+		zhonyangjun_unit = { x = 1 y = 2 }
+		zhonyangjun_unit = { x = 2 y = 0 }
+		zhonyangjun_unit = { x = 2 y = 1 }
+		zhonyangjun_unit = { x = 2 y = 2 }
+	}
+	priority = 6
+}
+
+units = {
+
+	### 德械师第一期 ###
+	division = {
+		name = "国民革命军荣誉第2师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	division = {
+		name = "第11师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	division = {
+		name = "第14师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	division = {
+		name = "第9师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	division = {
+		name = "51师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	division = {
+		name = "新38师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	division = {
+		name = "200师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	
+	division = {
+		name = "第10师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	
+	division = {
+		name = "第11师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	
+	
+	#other
+	
+	division = {
+		name = "51师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	
+	division = {
+		name = "118师"
+		location = 11913
+		division_template = "中央军"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+		force_equipment_variants = { infantry_equipment_0 = { owner = "CHI" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "CHI" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "CHI" } }
+	}
+	
+}

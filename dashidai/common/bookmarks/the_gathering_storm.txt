@@ -1,0 +1,203 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1924.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "WHI"
+		default = yes
+		
+		"WHI"={
+			history = "WHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				WHI_tonghuopengzhang
+				WHI_chanyelan
+			}
+			focuses = {
+				WHI_2
+				WHI_33
+				WHI_22
+			}
+		}
+		"FEN"={
+			history = "FEN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				xuezhan
+				zhangxueliang1
+				kangzhang
+			}
+			focuses = {
+				tiaoxisulian
+				dalian
+				nanxia
+			}
+		}
+		"ITA"={
+			history = "WAN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				world_war_die_one_qian
+				taguo_liwai
+				sui_ji_ying_bian
+			}
+			focuses = {
+				ITA_great_depression
+				ITA_xuan_ju
+				ITA_lie
+			}
+		}
+
+		"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				CHI_communismabb_ducai
+				CHI_baoleigongchengshi
+				CHI_chikeshike_ducai
+			}
+			focuses = {
+				CHI_modern_troops
+				CHI_fort_engineer
+				CHI_qing
+			}
+		}
+		"USA"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				sky_life
+				bagreatest_depressioni
+				greatest_depression
+			}	
+			focuses = {
+				USA_north_and_south_edict
+				USA_the_new_deal
+				USA_communist_state
+			}		
+		}
+		"JAP"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				shiqi
+			}	
+			focuses = {
+				ruqin
+				guwushiqi
+				zhengzhuangdaifa
+			}			
+		}
+		"SOV"={
+			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				su_lian_wu_zhuang_li_liang
+				two_five_planeng_end
+				liedning
+			}
+			focuses = {
+				SOV_trotsky_constitution
+				SOV_begin_second_five_year_plan
+				SOV_trio_group
+			}	
+		}
+        
+		"POL"={
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				POL_the_baltic_alliance
+				POL_draw_closer_to_britain
+				POL_seek_accommodation_with_germany
+			}
+		}
+		
+
+
+		# minors from DLC ####
+		
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+			}
+			focuses = {
+				CAN_skewer_the_eagle
+				CAN_north_american_alliance
+				CAN_join_comintern
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				NZL_bob_semple_tank
+				NZL_independent_new_zealand
+				NZL_maori_volunteers
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SAF_ossewabrandwag
+				SAF_history_of_segregation
+			}
+			focuses = {
+				SAF_secure_interests_in_africa
+				SAF_support_the_german_coup
+				SAF_anti_colonialist_crusade
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+			}
+			focuses = {
+				RAJ_all_india_forward_bloc
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+		
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

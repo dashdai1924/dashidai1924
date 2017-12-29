@@ -1,0 +1,27 @@
+ideas = {
+	country = {
+			   #凡尔赛协议
+		GER_fanersai = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no
+			} 
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.80
+				line_change_production_efficiency_factor = -0.80
+				training_time_army_factor = 0.50
+			}		
+        }
+        #满目苍夷的德国
+		GER_cangyi = {
+			picture = generic_spy_political
+			allowed = {
+				always = no
+			} 
+			removal_cost = -1
+			modifier = {
+				research_time_factor = 0.60
+			}		
+        }
+        }

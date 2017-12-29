@@ -1,0 +1,32 @@
+add_namespace = fengxi
+country_event = {
+	id = fengxi.1
+	title = fengxi.1.t
+	desc = fengxi.1.d
+	picture = news_event_023
+
+	is_triggered_only = yes
+
+	option = {
+		name = fengxi.1.a
+		hidden_effect = {
+			CHI = {
+				country_event = {
+					days = 1
+					id = beifa.31
+				}
+			}
+		}
+	}
+	option = {
+		name = fengxi.1.b
+		hidden_effect = {
+			CHI = {
+				country_event = {
+					days = 1
+					id = beifa.33
+				}
+			}
+		}
+	}
+}

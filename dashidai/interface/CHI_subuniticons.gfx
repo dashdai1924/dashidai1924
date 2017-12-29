@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	###兵牌大图像###
+
+	spriteType = { name = "GFX_unit_zhonyangjun_unit_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_zhonyangjun_unit_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_tank_5_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_5_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_light_tank_equipment_5_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_5_icon.dds" noOfFrames = 2 }
+		spriteType = { name = "GFX_unit_meixie_army_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_meixie_army_icon.dds" noOfFrames = 2 }
+	###兵牌小图像（地图上的计数器）###
+
+	spriteType = { name = "GFX_unit_zhonyangjun_unit_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_zhonyangjun_unit_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_light_tank_5_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_5_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_light_tank_5_equipment_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_5_icon.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_unit_meixie_army_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_meixie_army_icon.dds" noOfFrames = 2 }
+
+	
+
+}

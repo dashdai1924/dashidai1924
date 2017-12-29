@@ -1,0 +1,14 @@
+idea_categories = {
+	Country_focus_te = {
+		slot = Country_focus_te
+		slot = Beifa_shengchan_1
+		slot = Beifa_shengchan_2
+		slot = Beifa_shengchan_3
+		slot = Beifa_shengchan_4
+		slot = Beifa_shengchan_5
+		slot = Beifa_shengchan_6
+		
+		cost = 0
+		removal_cost = 0
+	}
+}

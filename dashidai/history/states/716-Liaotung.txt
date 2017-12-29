@@ -1,0 +1,63 @@
+
+state={
+	id=716
+	name="STATE_716"
+	resources={
+		steel=6
+	}
+
+	history={
+		owner = FEN
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 2
+			964 = {
+				naval_base = 1
+			}
+
+		}
+		victory_points = {
+			11771 3 
+		}
+
+	}
+
+	provinces={
+		836 846 892 964 987 3783 3839 3849 3895 3970 6804 6860 6910 6918 6951 6981 9781 9788 9835 9854 9885 11764 11771 11808 11815 
+	}
+	manpower=11264620
+	buildings_max_level_factor=1.000
+	state_category=city
+}

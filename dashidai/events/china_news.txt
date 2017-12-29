@@ -1,0 +1,526 @@
+﻿#########################
+## chi Mod Events ##
+#########################
+
+add_namespace = chi
+
+#请美国
+news_event = {
+	id = chi.103
+	title = chi.103.t
+	desc = chi.103.d
+	picture = GFX_CHI_leader_xunguo
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.103.a
+		
+		trigger = {
+				TAG = chi
+		}
+	}
+	
+	option = {
+		name = chi.103.b
+
+		trigger = {
+			NOT = {
+				TAG = chi
+			}
+		}
+	}
+}
+
+#强占蒙古唐努图瓦
+news_event = {
+	id = chi.104
+	title = chi.104.t
+	desc = chi.104.d
+	picture = GFX_CHI_leader_menggu
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.104.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.104.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+				TAG = SOV
+			}
+		}
+	}
+	
+		option = {
+		name = chi.104.c
+		
+		trigger = {
+				TAG = SOV
+		}
+	}
+}
+
+#法国让步
+news_event = {
+	id = chi.105
+	title = chi.105.t
+	desc = chi.105.d
+	picture = GFX_CHI_leader_xunguo
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.105.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.105.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+			}
+		}
+	}
+}
+
+#中苏谈判
+news_event = {
+	id = chi.106
+	title = chi.106.t
+	desc = chi.106.d
+	picture = GFX_CHI_leader_tanpan
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.106.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.106.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+			}
+		}
+	}
+}
+
+#强占新疆以外
+news_event = {
+	id = chi.107
+	title = chi.107.t
+	desc = chi.107.d
+	picture = GFX_CHI_leader_menggu
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.107.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.107.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+				TAG = SOV
+			}
+		}
+	}
+	
+		option = {
+		name = chi.107.c
+		
+		trigger = {
+				TAG = SOV
+		}
+	}
+}
+
+#北伐
+news_event = {
+	id = chi.108
+	title = chi.108.t
+	desc = chi.108.d
+	picture = GFX_CHI_leader_beifajun
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.108.a1
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	option = {
+		name = chi.108.a2
+
+		trigger = {
+			NOT = {
+				OR = {
+					TAG = FEN
+					TAG = WHI
+					TAG = WAN
+				}
+			}
+		}
+	}
+	option = {
+		name = chi.108.a3
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+				TAG = FEN
+				TAG = WHI
+				TAG = WAN
+			}
+		}
+	}
+}
+#中国被攻击！
+news_event = {
+	id = chi.109
+	title = chi.109.t
+	desc = chi.109.d
+	picture = GFX_CHI_leader_zhonguo
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.109.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.109.b
+
+		trigger = {
+				TAG = SHX
+				TAG = PRC
+				TAG = XSM
+				TAG = CXC
+				TAG = YUN
+				TAG = GXC
+				TAG = YIN
+			}
+		}
+	}
+	
+#九一八事变
+news_event = {
+	id = chi.110
+	title = chi.110.t
+	desc = chi.110.d
+	picture = GFX_CHI_leader_donbei
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.110.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.110.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+				TAG = SHX
+				TAG = PRC
+				TAG = XSM
+				TAG = CXC
+				TAG = YUN
+				TAG = GXC
+				TAG = YIN
+			}
+		}
+	}
+	
+		option = {
+		name = chi.110.c
+		
+		trigger = {
+				TAG = SHX
+				TAG = PRC
+				TAG = XSM
+				TAG = CXC
+				TAG = YUN
+				TAG = GXC
+				TAG = YIN
+		}
+	}
+}
+
+#成立广州国民政府
+news_event = {
+	id = chi.111
+	title = chi.111.t
+	desc = chi.111.d
+	picture = GFX_CHI_leader_beifajun
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		date > 1925.7.1
+		NOT = { 613 = { owner = CHI } }
+		NOT = { 746 = { owner = CHI } }
+	}
+	option = {
+		name = chi.111.a1
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	option = {
+		name = chi.111.a3
+		
+		trigger = {
+			OR = {
+				TAG = WHI
+				TAG = WAN
+				TAG = FEN
+			}
+		}
+	}
+	option = {
+		name = chi.111.a2
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+				TAG = WHI
+				TAG = WAN
+				TAG = FEN
+			}
+		}
+	}
+}
+#国共合作的实现
+news_event = {
+	id = chi.112
+	title = chi.112.t
+	desc = chi.112.d
+	picture = GFX_CHI_leader_beifajun
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = chi.112.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.112.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+			}
+		}
+	}
+}
+#孙中山的逝世
+news_event = {
+	id = chi.113
+	title = chi.113.t
+	desc = chi.113.d
+	picture = GFX_CHI_leader_beifajun
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		date > 1925.3.12
+		NOT = { has_country_flag = 孙中山逝世 }
+		country_exists = WHI
+		country_exists = WAN
+		country_exists = FEN
+		country_exists = CHI
+	}
+	immediate = {
+		set_country_flag = 孙中山逝世
+		CHI = {
+			kill_country_leader = yes
+			create_country_leader = {
+				name = "蒋介石"
+				desc = "POLITICS_KURT_SCHUSCHNIGG_DESC"
+				picture = "gfx/leaders/CHI/jiangjieshi.dds"
+				expire = "1965.1.1"
+				ideology = centrism
+				traits = {
+					#
+				}
+			}
+		}
+	}
+	option = {
+		name = chi.113.a1
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	option = {
+		name = chi.113.a2
+		
+		trigger = {
+			OR = {
+				TAG = WHI
+				TAG = WAN
+				TAG = FEN
+			}
+		}
+	}
+	option = {
+		name = chi.113.a3
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+				TAG = WHI
+				TAG = WAN
+				TAG = FEN
+			}
+		}
+	}
+}
+#孙殿英盗墓
+news_event = {
+	id = chi.114
+	title = chi.114.t
+	desc = chi.114.d
+	picture = CHI_leader_bixia_sundianyingdaomutupian
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = chi.114.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.114.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+			}
+		}
+	}
+}
+#孙殿英被擒
+news_event = {
+	id = chi.114
+	title = chi.114.t
+	desc = chi.114.d
+	picture = CHI_leader_bixia_sundianyingdaomutupian
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = chi.114.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.114.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+			}
+		}
+	}
+}
+#孙殿英老婆被强奸
+news_event = {
+	id = chi.115
+	title = chi.115.t
+	desc = chi.115.d
+	picture = CHI_leader_bixia_sundianyingdaomutupian
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = chi.115.a
+		
+		trigger = {
+				TAG = CHI
+		}
+	}
+	
+	option = {
+		name = chi.115.b
+
+		trigger = {
+			NOT = {
+				TAG = CHI
+			}
+		}
+	}
+}

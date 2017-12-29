@@ -1,0 +1,57 @@
+﻿add_namespace = france
+#意大利影响着我们的政治 - gcd
+country_event = {
+	id = france.32
+	title = france.32.t
+	desc = france.32.d
+	picture = news_event_023
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.32.a
+			hidden_effect = {
+					set_politics = {
+                        parties = {
+                                democratic = {
+                                        popularity = 40
+                                    }
+                                fascism = {
+                                        popularity = 1
+                                    }
+                                communism = {
+                                        popularity = 59
+                                    }
+                            }
+                    }
+			}
+	}
+}
+#意大利影响着我们的政治 - mzd
+country_event = {
+	id = france.33
+	title = france.33.t
+	desc = france.33.d
+	picture = news_event_017
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.33.a
+			hidden_effect = {
+					set_politics = {
+                        parties = {
+                                democratic = {
+                                        popularity = 90
+                                    }
+                                fascism = {
+                                        popularity = 1
+                                    }
+                                communism = {
+                                        popularity = 9
+                                    }
+                            }
+                    }
+			}
+	}
+}

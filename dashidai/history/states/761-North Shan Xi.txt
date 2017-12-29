@@ -1,0 +1,57 @@
+state=
+{
+	id=761
+	name="STATE_761" # Shaanxi
+	manpower = 1344000
+	
+	state_category = town
+	
+	resources={
+		steel=1
+	}
+	history=
+	{
+		owner = ZZH
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			8049 3
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+	}
+	provinces={
+		7208 12356 4939 10880 7314 7659 1458 
+	}
+}

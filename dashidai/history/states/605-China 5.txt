@@ -1,0 +1,61 @@
+
+state={
+	id=605
+	name="STATE_605"
+	resources={
+		steel=10
+	}
+
+	history={
+		owner = CXC
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			4925 5 
+		}
+		victory_points = {
+			6999 20 
+		}
+	}
+
+	provinces={
+		1257 1367 1395 1893 2030 2091 4375 4403 4925 5048 6999 7240 7256 8026 9966 10132 10144 10787 10903 11865 12141 12274 12705 12767 12819 
+	}
+	manpower=52700000
+	buildings_max_level_factor=1.000
+	state_category=city
+}

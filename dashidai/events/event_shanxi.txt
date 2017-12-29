@@ -1,0 +1,32 @@
+add_namespace = shanxi
+country_event = {
+	id = shanxi.1
+	title = shanxi.1.t
+	desc = shanxi.1.d
+	picture = news_event_023
+
+	is_triggered_only = yes
+
+	option = {
+		name = shanxi.1.a
+		hidden_effect = {
+			CHI = {
+				country_event = {
+					days = 1
+					id = beifa.30
+				}
+			}
+		}
+	}
+	option = {
+		name = shanxi.1.b
+		hidden_effect = {
+			CHI = {
+				country_event = {
+					days = 1
+					id = beifa.32
+				}
+			}
+		}
+	}
+}

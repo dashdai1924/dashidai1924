@@ -1,0 +1,40 @@
+leader_traits = {
+
+
+##################################
+# Corps Commander traits.上将特质
+##################################
+	
+	
+	
+	
+##################################
+# Common Traits 通用特质
+##################################
+
+	
+	
+	dashuaifengcai= { 
+		type = all
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			recon_factor = 0.10
+			offence = 0.10 #进攻+10%
+			defence = 0.10
+			army_armor_attack_factor = 0.10 #装甲单位进攻+10%
+			pocket_penalty = -0.10 #包围惩罚-10%
+			dig_in_speed = 1 #堑壕速度+1
+			planning_speed = 0.05 #计划速度+5%
+			amphibious_invasion = 0.05 #两栖登陆速度+5%
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+}

@@ -1,0 +1,658 @@
+focus_tree = {
+	id = 川军
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CXC
+		}
+	}
+	default = no
+	focus = {
+		id = 四川铁路
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.10
+		x = 0
+		y = 0
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					605 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = 铁路发展
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 2
+		y = 0
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					749 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = 成都讲武堂
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 3.50
+		x = 5
+		y = 0
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = POL_prepare_for_the_next_war
+							bonus = 0.5
+							uses = 3
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = 割据四川
+		icon = GFX_goal_generic_demand_territory
+		cost = 3.50
+		x = 11
+		y = 0
+			completion_reward = {
+					add_ideas = GXC_116
+				}
+
+	}
+	focus = {
+		id = 铁路投资
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = 四川铁路
+			focus = 铁路发展
+		}
+		x = 1
+		y = 1
+			ai_will_do = {
+					factor = 5
+				}
+			completion_reward = {
+					748 = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = infrastructure
+									level = 3
+									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = 工业发展
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = 铁路投资
+		}
+		x = 1
+		y = 2
+			completion_reward = {
+					add_tech_bonus = {
+							name = construction_tech
+							bonus = 0.5
+							uses = 2
+							category = construction_tech
+						}
+					add_political_power = 30
+				}
+
+	}
+	focus = {
+		id = 民用工厂
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3.50
+		prerequisite = {
+			focus = 工业发展
+		}
+		x = 0
+		y = 3
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 601 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							set_state_flag = POL_CENTRAL_INDUSTRIAL_REGION
+						}
+					random_owned_controlled_state = {
+							prioritize = { 605 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = industrial_complex
+									level = 2
+									instant_build = yes
+								}
+							set_state_flag = POL_expansion_of_new_towns_1
+						}
+				}
+
+	}
+	focus = {
+		id = 成都军用工厂
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 3.50
+		prerequisite = {
+			focus = 工业发展
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+					random_owned_controlled_state = {
+							prioritize = { 749 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+							set_state_flag = POL_CENTRAL_INDUSTRIAL_REGION_EXPANDED
+						}
+					random_owned_controlled_state = {
+							prioritize = { 748 }
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = arms_factory
+									level = 2
+									instant_build = yes
+								}
+							set_state_flag = POL_expansion_of_new_towns_1
+						}
+				}
+
+	}
+	focus = {
+		id = 钨矿产
+		icon = GFX_goal_generic_construction
+		cost = 35.00
+		prerequisite = {
+			focus = 成都军用工厂
+		}
+		x = 2
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = tungsten
+							amount = 50
+							state = 605
+						}
+				}
+
+	}
+	focus = {
+		id = 成都大学
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = 钨矿产
+		}
+		x = 2
+		y = 5
+			completion_reward = {
+					add_research_slot = 3
+				}
+
+	}
+	focus = {
+		id = 武器设计局
+		icon = GFX_goal_generic_build_tank
+		cost = 3.50
+		prerequisite = {
+			focus = 成都讲武堂
+		}
+		x = 4
+		y = 1
+			completion_reward = {
+					add_tech_bonus = {
+							name = infantry_weapons_bonus
+							bonus = 0.5
+							uses = 2
+							category = infantry_weapons
+						}
+				}
+
+	}
+	focus = {
+		id = 训练部队
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = 成都讲武堂
+		}
+		x = 6
+		y = 1
+
+	}
+	focus = {
+		id = 购入德国装备
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = 武器设计局
+			focus = 训练部队
+		}
+		x = 5
+		y = 2
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					GER = {
+							add_political_power = 50
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 6000
+							producer = GER
+						}
+					add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 2000
+							producer = GER
+						}
+				}
+
+	}
+	focus = {
+		id = 采购德国坦克
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 6
+		prerequisite = {
+			focus = 购入德国装备
+		}
+		x = 5
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			GER = { add_political_power = 50 }
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 100
+				producer = GER
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_2
+				amount = 100
+				producer = GER
+			}
+		}
+	}
+	focus = {
+		id = 购入德国飞机
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		prerequisite = {
+			focus = 采购德国坦克
+		}
+		x = 5
+		y = 4
+			focus = {
+					id = EastAsia_CHI_deshifeiji
+					icon = GFX_goal_generic_air_fighter
+					prerequisite = {
+							focus = EastAsia_CHI_deshitanke
+						}
+					x = 16
+					y = 8
+					cost = 5
+					ai_will_do = {
+							factor = 1
+						}
+					completion_reward = {
+							remove_ideas = german_advisors
+							GER = {
+									add_political_power = 50
+								}
+							add_equipment_to_stockpile = {
+									type = transport_plane_equipment_1
+									amount = 300
+									producer = GER
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = 德国教官
+		icon = GFX_goal_generic_CAS
+		cost = 10.00
+		prerequisite = {
+			focus = 购入德国飞机
+		}
+		x = 5
+		y = 5
+			completion_reward = {
+			add_tech_bonus = {
+			name = special_forces_bonus
+			bonus = 0.5
+			uses = 2
+			technology = paratroopers
+			technology = paratroopers2
+
+	}
+	focus = {
+		id = 加入北伐
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = 割据四川
+		}
+		mutually_exclusive = {
+			focus = 扑灭北伐
+		}
+		x = 9
+		y = 1
+			ai_will_do = {
+					factor = 5
+					modifier = {
+							factor = 10
+							is_historical_focus_on = yes
+						}
+				}
+			completion_reward = {
+					add_ideas = volunteer_corps_focus
+					set_rule = {
+							can_send_volunteers = yes
+						}
+				}
+			available = {
+					NOT = {
+							has_war_with = CHI
+							has_government = communism
+						}
+				}
+
+	}
+	focus = {
+		id = 机械化农业
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = 加入北伐
+		}
+		x = 9
+		y = 2
+			completion_reward = {
+					add_ideas = GXC_116
+				}
+
+	}
+	focus = {
+		id = 收复西藏
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = 机械化农业
+		}
+		x = 9
+		y = 3
+			ai_will_do = {
+
+}
+			id = EastAsia_CHI_jijiehaojiaogong
+			icon = GFX_goal_generic_war_with_comintern
+			mutually_exclusive = {
+					focus = EastAsia_CHI_zhongsuhezuo
+				}
+			prerequisite = {
+					focus = EastAsia_CHI_rangwaibixianannei
+				}
+			x = 22
+			y = 2
+			cost = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = { country_exist=TIB }
+				}
+
+	}
+	focus = {
+		id = 成都炼钢场
+		icon = GFX_goal_generic_construction2
+		cost = 3.50
+		prerequisite = {
+			focus = 民用工厂
+		}
+		x = 0
+		y = 4
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_resource = {
+							type = steel
+							amount = 80
+							state = 605
+						}
+				}
+
+	}
+	focus = {
+		id = 发展四川
+		icon = GFX_goal_generic_construct_civilian
+		cost = 3.50
+		prerequisite = {
+			focus = 成都炼钢场
+		}
+		x = 0
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					every_state = {
+							limit = {
+									is_owned_by = GXC
+									is_core_of = GXC
+								}
+							add_extra_state_shared_building_slots = 8
+						}
+				}
+			available = {
+					is_puppet = no
+					605 = {
+							is_owned_by = GXC
+						}
+				}
+
+	}
+	focus = {
+		id = 勘探
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = 发展四川
+			focus = 成都大学
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = 扑灭北伐
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		prerequisite = {
+			focus = 割据四川
+		}
+		mutually_exclusive = {
+			focus = 加入北伐
+		}
+		x = 13
+		y = 1
+			ai_will_do = {
+					factor = 10
+				}
+			completion_reward = {
+					add_ideas = limited_conscription
+				}
+
+	}
+	focus = {
+		id = 倒向英国
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = 扑灭北伐
+		}
+		x = 13
+		y = 2
+			focus = {
+					id = EastAsia_CHI_zhongmeihezuo
+					icon = GFX_goal_generic_political_pressure
+					mutually_exclusive = {
+							focus = EastAsia_CHI_zhongsuhezuo
+						}
+					prerequisite = {
+							focus = EastAsia_CHI_zhongwaijianjiao
+						}
+					is_puppet = no
+				}
+			x = 18
+			y = 2
+			cost = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+			add_political_power = 100
+			add_popularity = {
+					ideology = democratic
+					popularity = 0.05
+				}
+			add_opinion_modifier = {
+					ENGmodifier = Relationship_improvement
+				}
+			USA = {
+					add_opinion_modifier = {
+							target = CXC
+							modifier = Relationship_improvement
+						}
+				}
+			add_ideas = idea_CHI_USA_advisors
+			create_import = {
+					resource = oil
+					amount = 1
+				}
+
+	}
+	focus = {
+		id = 对蒋战争
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = 英国支援
+		}
+		x = 13
+		y = 4
+			ai_will_do = {
+
+}
+			id = EastAsia_CHI_jijiehaojiaogong
+			icon = GFX_goal_generic_war_with_comintern
+			mutually_exclusive = {
+					focus = EastAsia_CHI_zhongsuhezuo
+				}
+			prerequisite = {
+					focus = EastAsia_CHI_rangwaibixianannei
+				}
+			x = 22
+			y = 2
+			cost = 5
+			ai_will_do = {
+					factor = 1
+				}
+			bypass = {
+					NOT = {
+							country_exists = CHI
+						}
+				}
+
+	}
+	focus = {
+		id = 英国支援
+		icon = GFX_goal_generic_army_artillery2
+		cost = 0.00
+		prerequisite = {
+			focus = 倒向英国
+		}
+		x = 13
+		y = 3
+			completion_reward = {
+					add_equipment_to_stockpile = {
+							type = fighter_equipment_0
+							amount = 800
+							producer = ENG
+						}
+				}
+
+	}
+}

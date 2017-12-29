@@ -1,0 +1,452 @@
+ideas = {
+	country = {
+		#战死沙场
+		zhansishachang = {
+
+			picture = generic_morale_bonus
+		
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.05
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+			}
+
+		}
+		
+		#分裂的政府
+     WUH_tonghuopengzhang = {
+            picture = great_depression
+			allowed = {
+                always = no
+            }
+			removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.15
+                industrial_capacity_factory = -0.10
+				line_change_production_efficiency_factor = -0.15
+                production_speed_buildings_factor = -0.15
+                local_resources_factor = -0.10
+            }
+        }
+		
+		#穷困潦倒的政府
+        WUH_chanyelan = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			} 
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.15
+				line_change_production_efficiency_factor = -0.40
+				research_time_factor = 0.30
+			}
+			
+		}
+
+
+	# Communist uprisings may cause states to defect to PRC
+		WUH_communist_uprisings = {
+
+			picture = FRA_scw_intervention_republicans_focus
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+
+		}
+	}
+
+	political_advisor = {
+
+		WUH_xie_juezai = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		WUH_deng_xiaoping = {
+
+			picture = generic_political_advisor_asia_2
+				
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { captain_of_industry }
+		}
+
+		WUH_chen_yi = {
+
+			picture = generic_political_advisor_asia_3
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+	}	
+
+	army_chief = {
+		
+		#Communist
+
+		WUH_zhu_de = {
+			
+			picture = generic_army_asia_4
+
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		#Clique
+
+		WUH_chen_jitang = {
+
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		#Nationalist
+
+		WUH_li_zongren = {
+			
+			picture = generic_army_asia_6
+
+			allowed = {
+				original_tag = WUH
+			}
+					
+			traits = { army_chief_defensive_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		WUH_he_yingqin = {
+			
+			picture = generic_army_asia_1
+
+			allowed = {
+				original_tag = WUH
+			}
+						
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		
+		#Communist
+		#Fang Zeyi
+		#army_aviation_doctrine
+
+
+		#Clique
+
+		WUH_WUHg_shuming = {
+			
+			picture = generic_air_asia_1
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		#Nationalist
+
+		WUH_zhou_zhirou = {
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+
+			
+			traits = { air_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+		
+		#Communist
+
+		WUH_xiao_jinguang = {
+			
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = WUH
+			}
+					
+			traits = { navy_chief_commerce_raiding_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		#Clique
+
+		WUH_bai_chongxi = {
+			
+			picture = generic_navy_asia_2
+
+			allowed = {
+				original_tag = WUH
+			}
+					
+			traits = { navy_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		#Nationalist
+
+		WUH_chen_shaokuan = {
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = WUH
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	# TECHNOLOGY
+	
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		jiangnan_shipyard_group = {
+			picture = generic_naval_manufacturer_3
+
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			# riverine warfare weak on open waters
+						
+			traits = { naval_manufacturer }
+			
+		}
+	}
+	
+	aircraft_manufacturer = { #
+			
+		designer = yes
+		
+		camco = {
+			picture = generic_air_manufacturer_3
+
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+			
+			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+	theorist = {
+		WUH_bo_yibo = {
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		WUH_fang_zeyi = { 
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.07
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+		WUH_huang_shen = {
+
+			picture = generic_navy_asia_2
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+			
+			traits = { naval_theorist }
+		}
+
+	}
+
+
+	high_command = {
+
+		WUH_gao_zhihang = {
+
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { air_air_superiority_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		WUH_xiao_yisu = {
+
+			picture = generic_army_asia_2
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		WUH_chen_cheng = {
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		WUH_yu_hanmou = {
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = WUH
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+}

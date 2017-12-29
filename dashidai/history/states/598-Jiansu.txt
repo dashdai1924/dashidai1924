@@ -1,0 +1,51 @@
+
+state={
+	id=598
+	name="STATE_598"
+
+	history={
+		owner = WHI
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1001 1029 1076 1089 1121 1161 4001 4005 4031 4082 4091 4123 4148 7025 7142 7181 7200 9953 9956 10095 11928 11973 12055 12067 13144 
+	}
+	manpower=23669300
+	buildings_max_level_factor=1.000
+	state_category=town
+}

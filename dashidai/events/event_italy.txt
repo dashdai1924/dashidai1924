@@ -1,0 +1,125 @@
+﻿add_namespace = italy
+#1924选举
+country_event = {
+	id = italy.18
+	title = italy.18.t
+	desc = italy.18.d
+	picture = news_event_009
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.18.a1
+		hidden_effect = {
+				retire_country_leader = yes
+			set_politics = {
+				parties = {
+					democratic = { 
+						popularity = 18
+					}
+			
+					fascism = {
+						popularity = 80
+					}
+					
+					communism = {
+						popularity = 2
+					}
+				}
+	
+				ruling_party = fascism
+				last_election = "1928.4.14"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Benito Mussolini"
+				desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+				picture = "Portrait_Italy_Benito_Mussolini.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+				}
+			}
+			set_country_flag = 法西斯当选
+			clr_country_flag = 民主党当选
+			clr_country_flag = 共产党当选
+		}
+	}
+	option = {
+		name = italy.18.a2
+		hidden_effect = {
+				retire_country_leader = yes
+			set_politics = {
+				parties = {
+					democratic = { 
+						popularity = 18
+					}
+			
+					fascism = {
+						popularity = 60
+					}
+					
+					communism = {
+						popularity = 22
+					}
+				}
+	
+				ruling_party = communism
+				last_election = "1928.4.14"
+				election_frequency = 60
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "Giacomo Matteotti"
+				desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+				picture = "Portrait_Italy_Giacomo_Matteotti.dds"
+				expire = "1965.1.1"
+				ideology = marxism
+				traits = {
+				}
+			}
+			set_country_flag = 共产党当选
+			clr_country_flag = 民主党当选
+			clr_country_flag = 法西斯当选
+		}
+	}
+	option = {
+		name = italy.18.a3
+				hidden_effect = {
+				retire_country_leader = yes
+				set_politics = {
+				parties = {
+					democratic = { 
+						popularity = 28
+					}
+			
+					fascism = {
+						popularity = 60
+					}
+					
+					communism = {
+						popularity = 12
+					}
+				}
+	
+				ruling_party = democratic
+				last_election = "1928.4.14"
+				election_frequency = 4
+				elections_allowed = yes
+			}
+			create_country_leader = {
+				name = "Alcide De Gasperi"
+				desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+				picture = "Portrait_Italy_Alcide_De_Gasperi.dds"
+				expire = "1965.1.1"
+				ideology = liberalism
+				traits = {
+				}
+			}
+			set_country_flag = 民主党当选
+			clr_country_flag = 共产党当选
+			clr_country_flag = 法西斯当选
+		}
+	}
+}

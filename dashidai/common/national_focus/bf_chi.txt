@@ -1,0 +1,441 @@
+focus_tree = {
+	id = bf_chi
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = CHI_military_building
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		x = 0
+		y = 0
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHI_military_building
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		x = 0
+		y = 0
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHI_the_first_eastward
+		icon = GFX_goal_generic_alliance
+		cost = 0.15
+		x = 4
+		y = 0
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = ZZF
+							generator = { 593 }
+						}
+				}
+			available = {
+					date > 1925.2.1
+				}
+
+	}
+	focus = {
+		id = CHI_like_you_see
+		icon = GFX_goal_generic_air_production
+		cost = 50.00
+		x = 1
+		y = 17
+
+	}
+	focus = {
+		id = CHI_whampoa_military_academy
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_military_building
+		}
+		x = 0
+		y = 1
+			completion_reward = {
+					add_ideas = huangpu
+				}
+
+	}
+	focus = {
+		id = CHI_basic_military_training
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_whampoa_military_academy
+		}
+		x = 2
+		y = 0
+			completion_reward = {
+					army_experience = 15
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.25
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CHI_officer_training
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_basic_military_training
+		}
+		x = 2
+		y = 1
+			completion_reward = {
+					country_event = {
+							days = 1
+							id = beifa.102
+						}
+				}
+
+	}
+	focus = {
+		id = CHI_kuomintang_communist_party_military_cooperation
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_officer_training
+		}
+		x = 1
+		y = 2
+			completion_reward = {
+					army_experience = 10
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+					if = {
+							limit = {
+									has_idea = CHI_diyiciguogonghezuo2
+								}
+							remove_ideas = CHI_diyiciguogonghezuo2
+							add_ideas = CHI_diyiciguogonghezuo3
+						}
+				}
+			available = {
+					has_country_flag = 第一次国共合作
+				}
+
+	}
+	focus = {
+		id = CHI_senior_military_exercise
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_officer_training
+		}
+		x = 2
+		y = 3
+			completion_reward = {
+					army_experience = 5
+					add_tech_bonus = {
+							name = land_doc_bonus
+							bonus = 0.5
+							uses = 1
+							category = land_doctrine
+						}
+				}
+
+	}
+	focus = {
+		id = CHI_consolidate_results
+		icon = GFX_goal_demand_sudetenland
+		cost = 0.15
+		prerequisite = {
+			focus = CHI_the_first_eastward
+		}
+		x = 4
+		y = 1
+			completion_reward = {
+					create_wargoal = {
+							type = take_state_focus
+							target = ZZG
+							generator = { 759  760  591 }
+						}
+					593 = {
+							set_border_war = yes
+						}
+					country_event = {
+							days = 1
+							id = beifa.101
+						}
+				}
+			available = {
+					date > 1925.9.1
+				}
+
+	}
+	focus = {
+		id = CHI_northern_expedition_started
+		icon = GFX_goal_generic_military_deal
+		cost = 0.15
+		prerequisite = {
+			focus = CHI_consolidate_results
+		}
+		x = 4
+		y = 2
+			completion_reward = {
+					declare_war_on = {
+							target = WHI
+							type = annex_everything
+						}
+					declare_war_on = {
+							target = WAN
+							type = annex_everything
+						}
+					declare_war_on = {
+							target = FEN
+							type = annex_everything
+						}
+					WHI = {
+							add_ideas = CHI_thisischinesesthing
+						}
+					WAN = {
+							add_ideas = CHI_thisischinesesthing
+						}
+					FEN = {
+							add_ideas = CHI_thisischinesesthing
+						}
+					add_ideas = CHI_thisischinesesthing
+					news_event = {
+							id = chi.108
+						}
+				}
+			available = {
+					date > 1926.7.9
+				}
+
+	}
+	focus = {
+		id = CHI_military_workshop
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_the_first_eastward
+		}
+		x = 6
+		y = 1
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = arms_factory
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+									type = arms_factory
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = arms_factory
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHI_guangdong_livelihood_development
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_military_workshop
+		}
+		x = 6
+		y = 2
+			completion_reward = {
+					random_owned_controlled_state = {
+							limit = {
+									free_building_slots = {
+											building = industrial_complex
+											size > 0
+											include_locked = yes
+										}
+									OR = {
+											is_in_home_area = yes
+											NOT = {
+													owner = {
+															any_owned_state = {
+																	free_building_slots = {
+																			building = industrial_complex
+																			size > 0
+																			include_locked = yes
+																		}
+																	is_in_home_area = yes
+																}
+														}
+												}
+										}
+								}
+							add_extra_state_shared_building_slots = 3
+							add_building_construction = {
+									type = industrial_complex
+									level = 1
+									instant_build = yes
+								}
+						}
+				}
+			bypass = {
+					custom_trigger_tooltip = {
+							tooltip = production_effort_tt
+							all_owned_state = {
+									free_building_slots = {
+											building = industrial_complex
+											size < 1
+											include_locked = yes
+										}
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CHI_ease_inflation
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		prerequisite = {
+			focus = CHI_guangdong_livelihood_development
+		}
+		x = 6
+		y = 3
+			completion_reward = {
+					if = {
+							limit = {
+									has_idea = CHI_tonghuopengzhang
+								}
+							remove_ideas = CHI_tonghuopengzhang
+							add_ideas = CHI_tonghuopengzhang1
+						}
+				}
+
+	}
+}

@@ -1,0 +1,21 @@
+state={
+	id=749
+	name="STATE_749"
+	provinces={
+		1082 1197 1934 4087 4318 4425 4588 4996 8063 10386 10486 10920 12335 12464 12492 
+	}
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			4425 1 
+		}
+
+	}
+	manpower=131000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

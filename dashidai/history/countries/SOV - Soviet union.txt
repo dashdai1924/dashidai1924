@@ -1,0 +1,508 @@
+﻿capital = 219
+
+oob = "SOV_1936"
+
+set_research_slots = 1
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_recon = 1	
+	tech_engineers = 1
+	tech_military_police = 1
+	paratroopers = 1
+	gwtank = 1
+	early_fighter = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	transport = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+
+set_convoys = 25
+set_national_unity = 0.35
+
+set_politics = {
+
+	parties = {
+		neutrality = {
+			popularity = 1
+		}
+		democratic = { 
+			popularity = 10 #shared between all parties, should add to 100
+		}
+
+		fascism = {
+			popularity = 2
+		}
+		
+		communism = {
+			popularity = 87
+		}
+	}
+	
+	ruling_party = communism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_faction = Comintern
+add_to_faction = SOV
+
+
+add_ideas = {
+	home_of_revolution
+}
+
+create_country_leader = {
+	name = "约瑟夫·维萨里奥诺维奇·斯大林"
+	desc = "POLITICS_JOSEPH_STALIN_DESC"
+	picture = "Portrait_Soviet_Joseph_Stalin.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "Konstantin Rodzaevsky"
+	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
+	picture = "Portrait_Soviet_Konstantin_Rodzaevsky.dds"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "亚历山大·弗多洛维奇·克伦斯基"
+	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+	picture = "Portrait_Soviet_Generic_1.dds"
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "伊凡·斯捷潘诺维奇·科涅夫"
+	desc = "POLITICS_ALEXANDER_FYODOROVICH_KERENSKY_DESC"
+	picture = "Portrait_Soviet_Ivan_Konev.dds"
+	expire = "1953.3.1"
+	ideology = despotism
+	traits = {
+		
+	}
+}
+
+add_namespace = {
+	name = "unit_leader_sov"
+	type = unit_leader
+}
+
+create_corps_commander = {
+	name = "格奥尔吉·朱可夫"
+	id = 410
+		picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+	traits = { winter_specialist panzer_leader  }
+	skill = 5
+
+	
+}
+
+create_corps_commander = {
+	name = "康斯坦丁·罗科索夫斯基"
+	id = 402
+		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
+	traits = {  panzer_leader }
+	skill = 4
+	
+}
+
+create_corps_commander = {
+	name = "亚历山大·瓦西列夫斯基"
+	id = 407
+		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
+	traits = { panzer_leader  }
+	skill = 4
+
+	
+}
+
+create_corps_commander = {
+	name = "鲍里斯·沙波什尼科夫"
+		picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "Nikolai Vatutin"
+		picture = "Portrait_Soviet_Nikolai_Fyodorovich_Vatutin.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "伊万·科涅夫"
+	id = 408
+		picture = "Portrait_Soviet_Ivan_Konev.dds"
+	traits = { panzer_leader  }
+	skill = 5
+
+
+	
+}
+
+create_corps_commander = {
+	name = "谢苗·铁木辛哥"
+	id = 404
+		picture = "Portrait_Soviet_Semyon_Timoshenko.dds"
+	traits = {  }
+	skill = 3
+
+
+	
+}
+
+create_field_marshal = {
+	name = "克里门特·伏罗希洛夫"
+	id = 405
+		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
+	traits = { old_guard  }
+	skill = 1
+
+
+	
+}
+
+create_field_marshal = {
+	name = "米哈伊尔·图哈切夫斯基"
+	id = 401
+		picture = "Portrait_Soviet_Mikhail_Tukhachevsky.dds"
+	traits = { offensive_doctrine }
+	skill = 4
+
+	
+}
+
+create_field_marshal = {
+	name = "谢苗·布琼尼"
+		picture = "Portrait_Soviet_Semyon_Budyonny.dds"
+	traits = { old_guard }
+	skill = 1
+
+	
+}
+
+create_corps_commander = {
+	name = "伊凡?琼亚克贺夫斯基"
+		picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
+	traits = {  }
+	skill = 1 
+
+	
+}
+
+create_corps_commander = {
+	name = "Issa Pliyev"
+		picture = "Portrait_Soviet_Issa_Pliyev.dds"
+	traits = {  }
+	skill = 1
+
+	
+}
+
+create_corps_commander = {
+	name = "列奥尼德·戈沃罗夫"
+		picture = "Portrait_Soviet_Leonid_Govorov.dds"
+	traits = {   }
+	skill = 3
+	
+}
+
+create_field_marshal = {
+	name = "格里戈里·库利克"
+		picture = "Portrait_Soviet_Grigory_Kulik.dds"
+	traits = { old_guard }
+	skill = 1	
+}
+
+create_corps_commander = {
+	name = "基里尔·梅列茨科夫"
+		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
+	traits = {  }
+	skill = 3
+	
+
+	
+}
+
+create_corps_commander = {
+	name = "Filipp Golikov"
+		picture = "Portrait_Soviet_Filipp_Golikov.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "安德烈·叶廖缅科"
+		picture = "Portrait_Soviet_Andrey_Yeryomenko.dds"
+	traits = {  }
+	skill = 1 
+
+	
+}
+
+create_corps_commander = {
+	name = "Georgiy Zakharov"
+		picture = "Portrait_Soviet_Georgiy_Zakharov.dds"
+	traits = {  }
+	skill = 1 
+
+	
+}
+
+create_corps_commander = {
+	name = "Yakov Cherevichenko"
+		picture = "Portrait_Soviet_Yakov_Cherevichenko.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "Max Reyter"
+		picture = "Portrait_Soviet_Max_Andreyevich.dds"
+	traits = {  }
+	skill = 1
+
+	
+}
+create_corps_commander = {
+	name = "Nikandr Chibisov"
+		picture = "Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
+	traits = { trickster }
+	skill = 3
+
+	
+}
+create_corps_commander = {
+	name = "Vasily Kuznetsov"
+		picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
+	traits = { commando }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "安德烈·弗拉索夫"
+		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
+	traits = { winter_specialist }
+	id = 412
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "Ivan Fedyuninsky"
+		picture = "Portrait_Soviet_Ivan_Fedyuninsky.dds"
+	traits = {  }
+	skill = 1 
+	
+}
+
+create_corps_commander = {
+	name = "Maksim Purkayev"
+		picture = "Portrait_Soviet_Maksim_Purkayev.dds"
+	traits = {  }
+	skill = 3
+
+	
+}
+create_corps_commander = {
+	name = "Kuzma Galitsky"
+		picture = "Portrait_Soviet_Kuzma_Galitsky.dds"
+	traits = {  }
+	skill = 1 
+
+	
+}
+create_corps_commander = {
+	name = "马基恩·波波夫"
+		picture = "Portrait_Soviet_Matkian_Popov.dds"
+	traits = { winter_specialist }
+	skill = 2
+
+	
+}
+
+create_corps_commander = {
+	name = "尼可拉?伯扎林"
+		picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "Alexander Gorbatov"
+		picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "Kirill Moskalenko"
+		picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
+	traits = {  }
+	skill = 3
+	
+}
+
+create_corps_commander = {
+	name = "Dmitry Lelyushenko"
+		picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+	traits = {  }
+	skill = 1 
+	
+}
+
+create_corps_commander = {
+	name = "安德烈·格列奇科"
+		picture = "Portrait_Soviet_Andrei_Antonovich_Grechko.dds"
+	traits = {  }
+	skill = 3
+
+
+	
+}
+
+create_corps_commander = {
+	name = "罗季翁·马利诺夫斯基"
+		picture = "Portrait_Soviet_Rodion_Malinovsky.dds"
+	traits = {  }
+	skill = 1 
+
+	
+}
+
+create_corps_commander = {
+	name = "瓦西里·崔可夫"
+		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
+	traits = {  }
+	skill = 1
+
+	
+}
+
+create_navy_leader = {
+	name = "Filipp Oktyabrskiy"
+		picture = "Portrait_Soviet_Filipp_Oktyabrsky.dds"
+	traits = { ironside }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "谢尔盖·戈尔什科夫"
+	id = 411
+		picture = "Portrait_Soviet_Sergey_Gorshkov.dds"
+	traits = {  }
+	skill = 3
+}
+
+# Arrested in '41
+create_navy_leader = {
+	name = "Gordey Levchenko"
+	id = 406
+		picture = "Portrait_Soviet_Gordey_Levchenko.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Arseniy Golovko"
+	id = 409
+		picture = "Portrait_Soviet_Arseniy_Golovko.dds"
+	traits = { spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Vladimir Kasatonov"
+	id = 403
+		picture = "Portrait_Soviet_Vladimir_Kasatonov.dds"
+	traits = { seawolf }
+	skill = 2
+}
+
+
+### Ship Variants ###
+
+create_equipment_variant = {
+	name = "Series I Debakrist"
+	type = submarine_1
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Series IX Srednyaya"
+	type = submarine_2
+	upgrades = {
+		ship_reliability_upgrade = 1
+		sub_engine_upgrade = 1
+		sub_stealth_upgrade = 1
+		sub_torpedo_upgrade = 1
+	}
+}
+
+create_equipment_variant = {
+	name = "Leningrad & Minsk Class"
+	type = destroyer_1
+	upgrades = {
+		ship_torpedo_upgrade = 3
+		destroyer_engine_upgrade = 3
+		ship_ASW_upgrade = 3
+		ship_anti_air_upgrade = 3
+	}
+}
+
+1939.1.1 = {
+
+	create_equipment_variant = {
+		name = "Series X Shchuka"
+		type = submarine_2
+		upgrades = {
+			ship_reliability_upgrade = 3
+			sub_engine_upgrade = 3
+			sub_stealth_upgrade = 3
+			sub_torpedo_upgrade = 3
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Maxim Gorky Class"
+		type = heavy_cruiser_2
+		upgrades = {
+			ship_reliability_upgrade = 2
+			ship_engine_upgrade = 2
+			ship_armor_upgrade = 2
+			ship_gun_upgrade = 2
+		}
+	}
+}

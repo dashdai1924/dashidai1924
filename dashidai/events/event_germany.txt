@@ -1,0 +1,29 @@
+﻿add_namespace = germany
+#意大利影响着我们的政治
+country_event = {
+	id = germany.1001
+	title = germany.1001.t
+	desc = germany.1001.d
+	picture = news_event_023
+
+	is_triggered_only = yes
+
+	option = {
+		name = germany.1001.a
+			hidden_effect = {
+					set_politics = {
+                        parties = {
+                                democratic = {
+                                        popularity = 40
+                                    }
+                                fascism = {
+                                        popularity = 59
+                                    }
+                                communism = {
+                                        popularity = 1
+                                    }
+                            }
+                    }
+			}
+	}
+}

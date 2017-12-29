@@ -1,0 +1,52 @@
+state=
+{
+	id=615
+	name="STATE_615"
+	manpower = 11601000
+	
+	state_category = town
+	
+	history=
+	{
+		owner = SHX
+		add_core_of = WHI
+		add_core_of = YIN
+		add_core_of = YUN
+		add_core_of = GXC
+		add_core_of = FEN
+		add_core_of = XSM
+		add_core_of = SIK
+		add_core_of = CXC
+		add_core_of = SHX
+		add_core_of = WAN
+		add_core_of = WUH
+		add_core_of = ZZA
+		add_core_of = ZZB
+		add_core_of = ZZC
+		add_core_of = ZZD
+		add_core_of = ZZE
+		add_core_of = ZZF
+		add_core_of = ZZG
+		add_core_of = ZZH
+		add_core_of = ZZI
+		add_core_of = ZZJ
+		add_core_of = ZZK
+		add_core_of = ZZL
+		add_core_of = ZZM
+		add_core_of = ZZN
+		add_core_of = ZZO
+		add_core_of = ZZP
+		add_core_of = ZZQ
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			1519 3 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		1027 1034 1180 1203 1438 1519 1531 1575 4074 4174 4469 4538 4634 7571 10367 10421 10480 10507 12078 12300 12344 12432 
+	}
+}

@@ -1,0 +1,141 @@
+#########################
+## beifa Mod Events ##
+#########################
+
+add_namespace = beifa
+
+
+# 九一八
+country_event = {
+	id = beifa.12
+	title = beifa.12.t
+	desc = beifa.12.d
+	picture = GFX_CHI_leader_son
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = beifa.12.a
+		ai_chance = {
+			factor = 0
+		}
+		add_ideas = kangzhang
+	}
+	option = {
+		name = beifa.12.b
+		ai_chance = {
+			factor = 80
+		}
+		JAP = { transfer_state = 716 }
+	  JAP = { transfer_state = 328 }
+		JAP = { transfer_state = 715 }
+	  JAP = { transfer_state = 717 }
+		JAP = { transfer_state = 714 }
+		JAP = { transfer_state = 754 }
+		JAP = { transfer_state = 753 }
+	}
+}
+
+# 与民国的交易
+country_event = {
+	id = beifa.13
+	title = beifa.13.t
+	desc = beifa.13.d
+	picture = GFX_CHI_leader_qianzi
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	
+	option = {
+		name = beifa.13.a
+		ai_chance = {
+			factor = 80
+		}
+		CHI = { transfer_state = 608 }
+	}
+}
+#入共产国际
+country_event = {
+	id = beifa.14
+	title = beifa.14.t
+	desc = beifa.14.d
+	picture = GFX_CHI_leader_son
+	 
+
+	is_triggered_only = yes
+		
+	option = {
+		name = beifa.14.a
+		SOV = { add_to_faction = FEN }
+		SOV = {
+			add_ai_strategy = {
+				type = alliance
+				id = "FEN"
+				value = 200
+			}
+		}
+		hidden_effect = {
+			news_event = { hours = 6 id = FEN.104 }
+		}
+	}
+}
+# 皇姑屯事件
+country_event = {
+	id = beifa.15
+	title = beifa.15.t
+	desc = beifa.15.d
+	picture = GFX_CHI_leader_zhangzuolin
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+	      tag = FEN
+	      date > 1928.6.4
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	
+	option = {
+		name = beifa.15.a
+		country_event = { id = FEN.107 }
+		add_timed_idea = {	idea = beishangjunduei		days = 300	}
+		create_country_leader = {
+					name = "Zhangxueliang"
+					picture = "gfx/leaders/FEN/zhangxueliang.dds"
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+					}
+}
+		create_country_leader = {
+					name = "Zhangxueliang"
+					picture = "gfx/leaders/FEN/zhangxueliang.dds"
+					expire = "1965.1.1"
+					ideology = leninism
+					traits = {
+					}
+}
+		create_country_leader = {
+					name = "Zhangxueliang"
+					picture = "gfx/leaders/FEN/zhangxueliang.dds"
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+}
+		create_country_leader = {
+					name = "Zhangxueliang"
+					picture = "gfx/leaders/FEN/zhangxueliang.dds"
+					expire = "1965.1.1"
+					ideology = socialism
+					traits = {
+					}
+}
+
+	}
+}

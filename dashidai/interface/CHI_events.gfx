@@ -1,0 +1,58 @@
+spriteTypes = {	
+
+	###bf_events
+	
+	spriteType = {
+		name = "GFX_CHI_leader_xunguo"
+		texturefile = "gfx/event_pictures/CHI_leader_xunguo.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_CHI_leader_menggu"
+		texturefile = "gfx/event_pictures/CHI_leader_menggu.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_CHI_leader_tanpan"
+		texturefile = "gfx/event_pictures/CHI_leader_tanpan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CHI_leader_beifa"
+		texturefile = "gfx/event_pictures/CHI_leader_beifa.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_CHI_leader_beifajun"
+		texturefile = "gfx/event_pictures/CHI_leader_beifajun.dds"
+	}
+	
+	 spriteType = {
+		name = "GFX_CHI_leader_donbei"
+		texturefile = "gfx/event_pictures/CHI_leader_donbei.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CHI_leader_jiaru"
+		texturefile = "gfx/event_pictures/CHI_leader_jiaru.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CHI_leader_zhonguo"
+		texturefile = "gfx/event_pictures/CHI_leader_zhonguo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CHI_leader_zhonguodonbei"
+		texturefile = "gfx/event_pictures/CHI_leader_zhonguodonbei.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_CHI_leader_qiyi"
+		texturefile = "gfx/event_pictures/CHI_leader_qiyi.dds"
+	}
+	
+
+	
+	
+}

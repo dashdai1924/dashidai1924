@@ -1,0 +1,16 @@
+﻿add_namespace = britain
+country_event = {
+	id = britain.24
+	title = britain.24.t
+	desc = britain.24.d
+	picture = news_event_017
+
+	is_triggered_only = yes
+
+	option = {
+		name = britain.24.a
+			hidden_effect = {
+					add_to_faction = ITA
+			}
+	}
+}
