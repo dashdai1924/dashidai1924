@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "GATHERING_STORM_NAME"
 		desc = "GATHERING_STORM_DESC"
-		date = 1924.1.1.12
+		date = 1924.1.1.21
 		picture = "GFX_select_date_1936"
 		default_country = "WHI"
 		default = yes
@@ -53,14 +53,14 @@ bookmarks = {
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
-				CHI_communismabb_ducai
-				CHI_baoleigongchengshi
-				CHI_chikeshike_ducai
+				CHI_Kialdspo_koa
+				CHI_liuwangzhengfu
+				CHI_welcome_to_this_hell
 			}
 			focuses = {
-				CHI_modern_troops
-				CHI_fort_engineer
-				CHI_qing
+				CHI_expel_chiang_kai_shek
+				CHI_implement_industrial_development_plan
+				CHI_cold_war
 			}
 		}
 		"USA"={

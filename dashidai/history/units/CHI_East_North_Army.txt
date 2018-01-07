@@ -1,0 +1,147 @@
+﻿division_template = {
+	name = "东北军主力编制"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		artillery = { x = 0 y = 2 }
+		artillery = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "东北军普通编制"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "东北军低级编制"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "东北军坦克编制"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "东北军摩托编制"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		light_armor = { x = 1 y = 0 }
+	}
+}
+units = {
+	division = {
+		name = "东北一师"
+		location = 9843
+		division_template = "东北军主力编制"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "东北二师"
+		location = 9843
+		division_template = "东北军主力编制"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "东北三师"
+		location = 9843
+		division_template = "东北军主力编制"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "东北一团"
+		location = 9843
+		division_template = "东北军普通编制"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "东北二团"
+		location = 9843
+		division_template = "东北军普通编制"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "东北三团"
+		location = 9843
+		division_template = "东北军普通编制"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "东北军"
+		location = 9843
+		division_template = "东北军低级编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军"
+		location = 9843
+		division_template = "东北军低级编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军"
+		location = 9843
+		division_template = "东北军低级编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军"
+		location = 9843
+		division_template = "东北军低级编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军"
+		location = 9843
+		division_template = "东北军低级编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军"
+		location = 9843
+		division_template = "东北军低级编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军坦克一师"
+		location = 9843
+		division_template = "东北军坦克编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军坦克二师"
+		location = 9843
+		division_template = "东北军坦克编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军摩托一师"
+		location = 9843
+		division_template = "东北军摩托编制"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "东北军摩托二师"
+		location = 9843
+		division_template = "东北军摩托编制"
+		start_experience_factor = 0.2
+	}
+}

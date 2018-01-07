@@ -1,0 +1,70 @@
+add_namespace = buntrya
+country_event = {
+	id = buntrya.1
+	title = buntrya.1.t
+	desc = buntrya.1.d
+	picture = news_event_01
+	trigger = {
+		has_idea = Beifa_chengli_1
+		not = {
+			has_country_flag = 已经成立广州国民政府
+		}
+	}
+	immediate = {
+		set_country_flag = 已经成立广州国民政府
+	}
+	option = {
+		name = buntrya.1.a
+		hidden_effect = {
+			news_event = {
+				id = chi.111
+			}
+		}
+	}
+}
+country_event = {
+	id = buntrya.2
+	title = buntrya.2.t
+	desc = buntrya.2.d
+	picture = news_event_01
+	trigger = {
+		has_idea = Beifa_chengli_2
+		not = {
+			has_country_flag = 已经成立广州国民政府
+		}
+	}
+	immediate = {
+		set_country_flag = 已经成立南京国民政府
+	}
+	option = {
+		name = buntrya.2.a
+		hidden_effect = {
+			news_event = {
+				id = chi.111
+			}
+		}
+	}
+}
+country_event = {
+	id = buntrya.3
+	title = buntrya.3.t
+	desc = buntrya.3.d
+	picture = news_event_01
+	trigger = {
+		has_idea = Beifa_chengli_3
+		not = {
+			has_country_flag = 已经成立广州国民政府
+		}
+	}
+	immediate = {
+		set_country_flag = 已经成立重庆国民政府
+	}
+	option = {
+		name = buntrya.3.a
+		hidden_effect = {
+			news_event = {
+				id = chi.111
+			}
+		}
+	}
+}

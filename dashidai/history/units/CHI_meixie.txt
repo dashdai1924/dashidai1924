@@ -1,0 +1,109 @@
+﻿division_template = {
+	name = "美械师"
+	regiments = {
+	  meixie_army = { x = 0 y = 0 }
+		meixie_army = { x = 0 y = 1 }
+    meixie_army = { x = 1 y = 0 }
+		meixie_army = { x = 1 y = 1 }
+		meixie_army = { x = 2 y = 0 }
+    meixie_army = { x = 2 y = 1 }
+		
+	}
+	support = {
+        artillery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "国民革命军新编155师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }
+	}
+	division = {
+		name = "国民革命军新编16师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+	division = {
+		name = "国民革命军新编214师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+	division = {
+		name = "国民革命军新编441师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+	division = {
+		name = "国民革命军新编55师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+	division = {
+		name = "国民革命军新编123师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+	division = {
+		name = "国民革命军新编111师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+	division = {
+		name = "国民革命军新编120师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+	division = {
+		name = "国民革命军新编198师"
+		location = 1187
+		division_template = "美械师"
+		start_experience_factor = 1.0
+		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+	    force_equipment_variants = { artillery_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { support_equipment_1 = { owner = "USA" } }
+		force_equipment_variants = { motorized_equipment_1 = { owner = "USA" } }		
+	}
+}

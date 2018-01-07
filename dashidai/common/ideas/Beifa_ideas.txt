@@ -1,0 +1,2759 @@
+ideas = {
+	#1
+	#焦点
+	Country_focus_te = {
+		law = yes
+		Beifa_shengchan_1 = {
+			level = 1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shengchan_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shengchan_2 = {
+			level = 1
+			picture = generic_research_bonus
+			modifier = {
+				research_time_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shengchan_2_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shengchan_3 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				consumer_goods_factor = -0.025
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shengchan_3_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shengchan_4 = {
+			level = 1
+			picture = generic_infantry_bonus
+			modifier = {
+				army_speed_factor = 0.05
+				org_loss_when_moving = -0.05
+				land_reinforce_rate = 0.05
+				planning_speed = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shengchan_4_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shengchan_5 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				political_power_factor = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shengchan_5_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shengchan_6 = {
+			level = 1
+			picture = generic_morale_bonus
+			modifier = {
+				partisan_effect = 0.8
+				recon_factor = 0.25
+				consumer_goods_factor = 0.15
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shengchan_6_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	#生育
+	ShengyuZhengCe = {
+		law = yes
+		Beifa_renkou_1 = {
+			level = 1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				consumer_goods_factor = 0.01
+				unity_factor = 0.10
+			}
+			cost = 20
+			removal_cost = 0
+			traits = { Beifa_renkou_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_renkou_2 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				MONTHLY_POPULATION = -0.9
+				consumer_goods_factor = -0.15
+				unity_factor = -0.3
+			}
+			cost = 300
+			removal_cost = 0
+			traits = { Beifa_renkou_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_renkou_3 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				MONTHLY_POPULATION = -0.75
+				consumer_goods_factor = -0.1
+				unity_factor = -0.2
+			}
+			cost = 175
+			removal_cost = 0
+			traits = { Beifa_renkou_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_renkou_4 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				MONTHLY_POPULATION = -0.5
+				consumer_goods_factor = -0.05
+				unity_factor = -0.1
+			}
+			cost = 150
+			removal_cost = 0
+			traits = { Beifa_renkou_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_renkou_5 = {
+			level = 1
+			picture = generic_disjointed_gov
+			modifier = {
+				MONTHLY_POPULATION = -0.25
+				consumer_goods_factor = -0.025
+				unity_factor = -0.05
+			}
+			cost = 125
+			removal_cost = 0
+			traits = { Beifa_renkou_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_renkou_6 = {
+			level = 1
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				MONTHLY_POPULATION = 0.25
+				consumer_goods_factor = 0.025
+				unity_factor = -0.05
+			}
+			cost = 100
+			removal_cost = 0
+			traits = { Beifa_renkou_6_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_renkou_7 = {
+			level = 1
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				MONTHLY_POPULATION = 0.50
+				consumer_goods_factor = 0.05
+				unity_factor = -0.10
+			}
+			cost = 125
+			removal_cost = 0
+			traits = { Beifa_renkou_9_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_renkou_8 = {
+			level = 1
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				MONTHLY_POPULATION = 0.75
+				consumer_goods_factor = 0.075
+				unity_factor = -0.15
+			}
+			cost = 150
+			removal_cost = 0
+			traits = { Beifa_renkou_10_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_renkou_9 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = -20
+			traits = { Beifa_renkou_9_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	#建国
+	ChengLiJueYi = {
+		Beifa_chengli_1 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_1_t }
+			cancel_if_invalid = no
+			hidden_effect = {
+				country_event = {
+					days = 1
+					id = buntrya.1
+				}
+			}
+			available = {
+				not = {
+					has_country_flag = 已经成立广州国民政府
+				}
+				tag = CHI
+				owns_state = 591
+				owns_state = 760
+				owns_state = 759
+				owns_state = 592
+				owns_state = 757
+				owns_state = 758
+				owns_state = 593
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_2 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立南京国民政府
+				}
+				tag = CHI
+				has_completed_focus = CHI_ninghan_confluence
+				owns_state = 613
+				has_country_flag = 已经成立广州国民政府
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_3 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立重庆国民政府
+				}
+				tag = CHI
+				has_war = yes
+				not = {
+					controls_state = 613
+				}
+				has_country_flag = 已经成立南京国民政府
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_4 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立中华苏维埃共和国
+				}
+				tag = PRC
+				owns_state = 768
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_5 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立大西北联盟
+				}
+				has_country_flag = 邀请张学良
+				tag = PRC
+				owns_state = 752
+				owns_state = 765
+				owns_state = 622
+				owns_state = 761
+				owns_state = 615
+				owns_state = 616
+				owns_state = 283
+				owns_state = 604
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_6 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_6_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立中华人民共和国
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_7 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_7_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立中华民国
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_8 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_8_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立蒙古帝国
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_9 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_9_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立大清帝国
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_10 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_10_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立中华民国（台湾）
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_11 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_11_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立满洲国
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_12 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_12_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立满洲帝国
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_13 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_13_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立冀东防共自治委员会
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_14 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_14_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立冀东防共自治政府
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_15 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_15_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立中华民国临时政府
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_16 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_16_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立华北政务委员会
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_17 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_17_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立蒙古军政府
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_18 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_18_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立蒙古联合自治政府
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_19 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_19_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立中华民国维新政府
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chengli_20 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			cost = 70
+			removal_cost = 0
+			traits = { Beifa_chengli_20_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_country_flag = 已经成立南京国民政府（汪精卫）
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#最低工资
+	ZuiDiGongZi = {
+		Beifa_zuidigongzi_1 = {
+			level = 1
+			picture = great_depression
+			modifier = {
+				unity_factor = -0.025
+				consumer_goods_factor = -0.0125
+				conscription_factor = -0.0125
+				industrial_capacity_factory = -0.025
+				research_time_factor = 0.025
+				production_speed_buildings_factor = -0.05
+				local_resources_factor = -0.025
+				communism_drift = 0.05
+				MONTHLY_POPULATION = -0.05
+				conscription = -0.025
+				land_reinforce_rate = -0.0125
+				drift_defence_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidigongzi_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_zuidigongzi_2 = {
+			level = 1
+			picture = great_depression
+			modifier = {
+				unity_factor = -0.0125
+				consumer_goods_factor = -0.00625
+				conscription_factor = -0.00625
+				industrial_capacity_factory = -0.0125
+				research_time_factor = 0.0125
+				production_speed_buildings_factor = -0.025
+				local_resources_factor = -0.0125
+				communism_drift = 0.0125
+				MONTHLY_POPULATION = -0.025
+				conscription = -0.025
+				land_reinforce_rate = -0.00625
+				drift_defence_factor = -0.025
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidigongzi_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_zuidigongzi_3 = {
+			level = 1
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.0125
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidigongzi_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zuidigongzi_4 = {
+			level = 1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.025
+				political_power_factor = 0.05
+				research_time_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidigongzi_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zuidigongzi_5 = {
+			level = 1
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = 0.1
+				research_time_factor = -0.1
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidigongzi_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zuidigongzi_6 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = -20
+			traits = { Beifa_zuidigongzi_6_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	#最大工时
+	ZuiDaGongShi = {
+		Beifa_zuidagongshi_1 = {
+			level = 1
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				unity_factor = -0.05
+				political_power_factor = 0.025
+				industrial_capacity_factory = 0.025
+				research_time_factor = -0.025
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.025
+				conscription_factor = -0.025
+				MONTHLY_POPULATION = 0.05
+				attrition = 0.0125
+				supply_consumption_factor = 0.0125
+				drift_defence_factor = -0.125
+				land_reinforce_rate = -0.0125
+				army_morale_factor = -0.025
+			}
+			cost = 300
+			removal_cost = 10
+			traits = { Beifa_zuidagongshi_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		Beifa_zuidagongshi_2 = {
+			level = 1
+			picture = FRA_fortification_focus
+			modifier = {
+				unity_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidagongshi_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zuidagongshi_3 = {
+			level = 1
+			picture = generic_wall_line
+			modifier = {
+				unity_factor = 0.05
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.05
+				army_morale_factor = 0.025
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidagongshi_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zuidagongshi_4 = {
+			level = 1
+			picture = FRA_fortification_focus
+			modifier = {
+				unity_factor = 0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidagongshi_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		Beifa_zuidagongshi_5 = {
+			level = 1
+			picture = generic_wall_line
+			modifier = {
+				unity_factor = 0.2
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zuidagongshi_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zuidagongshi_6 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = -20
+			traits = { Beifa_zuidagongshi_6_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 0
+				
+			}
+		}
+	}
+	#安全规章
+	AnQuanGuiZhang = {
+		Beifa_anquanguizhang_1 = {
+			level = 1
+			picture = air_war_plans_division_focus
+			modifier = {
+				unity_factor = -0.01
+				consumer_goods_factor = -0.01
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				production_speed_bunker_factor = -0.1
+				MONTHLY_POPULATION = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_anquanguizhang_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_anquanguizhang_2 = {
+			level = 1
+			picture = air_war_plans_division_focus
+			modifier = {
+				industrial_capacity_factory = -0.05
+				local_resources_factor = -0.1
+				production_speed_buildings_factor = -0.05
+				production_speed_bunker_factor = -0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_anquanguizhang_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_anquanguizhang_3 = {
+			level = 1
+			picture = generic_production_bonus
+			modifier = {
+				unity_factor = 0.01
+				consumer_goods_factor = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_anquanguizhang_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_anquanguizhang_4 = {
+			level = 1
+			picture = generic_production_bonus
+			modifier = {
+				unity_factor = 0.02
+				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.02
+				local_resources_factor = 0.02
+				production_speed_buildings_factor = 0.02
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_anquanguizhang_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_anquanguizhang_5 = {
+			level = 1
+			picture = generic_wall_line
+			modifier = {
+				unity_factor = 0.03
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.025
+				local_resources_factor = 0.05
+				production_speed_buildings_factor = 0.025
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_anquanguizhang_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_anquanguizhang_6 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = -20
+			traits = { Beifa_anquanguizhang_6_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	#2
+	#失业补助iiiiiiiiiiiiiiiiiiii
+	ShiYeBuZhu = {
+		Beifa_shiyebuzhu_1 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				unity_factor = -0.01
+				consumer_goods_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shiyebuzhu_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shiyebuzhu_2 = {
+			level = 1
+			picture = generic_disjointed_gov
+			modifier = {
+				unity_factor = 0.02
+				consumer_goods_factor = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shiyebuzhu_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shiyebuzhu_3 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				unity_factor = 0.02
+				consumer_goods_factor = 0.02
+				research_time_factor = -0.025
+				MONTHLY_POPULATION = 0.025
+				conscription = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shiyebuzhu_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shiyebuzhu_4 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				unity_factor = 0.035
+				consumer_goods_factor = 0.04
+				research_time_factor = -0.035
+				MONTHLY_POPULATION = 0.035
+				conscription = 0.015
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shiyebuzhu_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shiyebuzhu_5 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				unity_factor = 0.05
+				consumer_goods_factor = 0.05
+				research_time_factor = -0.045
+				MONTHLY_POPULATION = 0.05
+				conscription = 0.0175
+				industrial_capacity_factory = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shiyebuzhu_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#童工
+	TongGong = {
+		Beifa_tonggong_1 = {
+			level = 1
+			picture = generic_disjointed_gov
+			modifier = {
+				unity_factor = -0.05
+				consumer_goods_factor = -0.02
+				MONTHLY_POPULATION = -0.02
+				communism_drift = 0.001
+				industrial_capacity_factory = 0.025
+				research_time_factor = 0.025
+				conscription_factor = -0.025
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tonggong_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_tonggong_2 = {
+			level = 1
+			picture = generic_manpower_bonus
+			modifier = {
+				unity_factor = -0.025
+				consumer_goods_factor = -0.01
+				industrial_capacity_factory = 0.01
+				conscription_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tonggong_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_tonggong_3 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				unity_factor = 0.025
+				consumer_goods_factor = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tonggong_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_tonggong_4 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = 0
+			traits = { Beifa_tonggong_4_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#退休金
+	TuiXiuJin = {
+		Beifa_tuixiujin_1 = {
+			level = 1
+			picture = great_depression
+			modifier = {
+				unity_factor = -0.01
+				consumer_goods_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tuixiujin_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_tuixiujin_2 = {
+			level = 1
+			picture = great_depression
+			modifier = {
+				unity_factor = 0.01
+				consumer_goods_factor = 0.01
+				conscription_factor = 0.01
+				MONTHLY_POPULATION = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tuixiujin_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_tuixiujin_3 = {
+			level = 1
+			picture = air_support_focus
+			modifier = {
+				unity_factor = 0.02
+				consumer_goods_factor = 0.03
+				conscription_factor = 0.02
+				MONTHLY_POPULATION = 0.02
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tuixiujin_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_tuixiujin_4 = {
+			level = 1
+			picture = air_support_focus
+			modifier = {
+				unity_factor = 0.04
+				consumer_goods_factor = 0.04
+				conscription_factor = 0.03
+				MONTHLY_POPULATION = 0.03
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tuixiujin_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_tuixiujin_5 = {
+			level = 1
+			picture = air_support_focus
+			modifier = {
+				unity_factor = 0.05
+				consumer_goods_factor = 0.05
+				conscription_factor = 0.04
+				MONTHLY_POPULATION = 0.04
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_tuixiujin_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#卫生保健
+	WeiShengBaoJian = {
+		Beifa_weishengbaojian_1 = {
+			level = 1
+			picture = air_war_plans_division_focus
+			modifier = {
+				unity_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_weishengbaojian_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_weishengbaojian_2 = {
+			level = 1
+			picture = air_war_plans_division_focus
+			modifier = {
+				unity_factor = 0.01
+				consumer_goods_factor = 0.01
+				MONTHLY_POPULATION = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_weishengbaojian_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_weishengbaojian_3 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				unity_factor = 0.01
+				consumer_goods_factor = 0.01
+				MONTHLY_POPULATION = 0.05
+				attrition = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_weishengbaojian_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_weishengbaojian_4 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				unity_factor = 0.02
+				consumer_goods_factor = 0.02
+				MONTHLY_POPULATION = 0.075
+				industrial_capacity_factory = 0.01
+				local_resources_factor = 0.01
+				attrition = -0.02
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_weishengbaojian_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_weishengbaojian_5 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				unity_factor = 0.04
+				consumer_goods_factor = 0.04
+				MONTHLY_POPULATION = 0.12
+				industrial_capacity_factory = 0.02
+				local_resources_factor = 0.02
+				attrition = -0.03
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_weishengbaojian_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#环境法
+	HuanJingFa = {
+		Beifa_huanjingfa_1 = {
+			level = 1
+			picture = FRA_army_of_aggression_focus
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_huanjingfa_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_huanjingfa_2 = {
+			level = 1
+			picture = generic_intel_bonus
+			modifier = {
+				unity_factor = 0.01
+				consumer_goods_factor = 0.03
+				local_resources_factor = -0.05
+				research_time_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_huanjingfa_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_huanjingfa_3 = {
+			level = 1
+			picture = generic_intel_bonus
+			modifier = {
+				unity_factor = 0.02
+				consumer_goods_factor = 0.04
+				local_resources_factor = -0.06
+				research_time_factor = -0.06
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_huanjingfa_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_huanjingfa_4 = {
+			level = 1
+			picture = generic_intel_bonus
+			modifier = {
+				unity_factor = 0.03
+				consumer_goods_factor = 0.05
+				local_resources_factor = -0.07
+				research_time_factor = -0.07
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_huanjingfa_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_huanjingfa_5 = {
+			level = 1
+			picture = generic_intel_bonus
+			modifier = {
+				unity_factor = 0.04
+				consumer_goods_factor = 0.06
+				local_resources_factor = -0.08
+				research_time_factor = -0.08
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_huanjingfa_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#艺术补贴
+	YiShuBuTie = {
+		Beifa_yishubutie_1 = {
+			level = 1
+			picture = great_depression
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yishubutie_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_yishubutie_2 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				consumer_goods_factor = 0.01
+				research_time_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yishubutie_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_yishubutie_3 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				consumer_goods_factor = 0.02
+				research_time_factor = -0.02
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yishubutie_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_yishubutie_4 = {
+			level = 1
+			picture = generic_research_bonus
+			modifier = {
+				consumer_goods_factor = 0.03
+				research_time_factor = -0.03
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yishubutie_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_yishubutie_5 = {
+			level = 1
+			picture = generic_research_bonus
+			modifier = {
+				consumer_goods_factor = 0.04
+				research_time_factor = -0.04
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yishubutie_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#3
+	#受教育权iiiiiiiiiiiiiiiiiiii
+	ShouJiaoYuQuan = {
+		Beifa_shoujiaoyuquan_1 = {
+			level = 1
+			picture = generic_spy_coup
+			modifier = {
+				consumer_goods_factor = 0.01
+				research_time_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_2 = {
+			level = 1
+			picture = generic_victors_of_ww1
+			modifier = {
+				consumer_goods_factor = 0.02
+				research_time_factor = -0.03
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_3 = {
+			level = 1
+			picture = generic_victors_of_ww1
+			modifier = {
+				consumer_goods_factor = 0.03
+				research_time_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_4 = {
+			level = 1
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.04
+				research_time_factor = -0.07
+				MONTHLY_POPULATION = -0.01
+			}
+			cost = 50
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_5 = {
+			level = 1
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_time_factor = -0.1
+				MONTHLY_POPULATION = -0.03
+			}
+			cost = 100
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_6 = {
+			level = 1
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = 0.07
+				research_time_factor = -0.12
+				MONTHLY_POPULATION = -0.05
+			}
+			cost = 150
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_6_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_7 = {
+			level = 1
+			picture = generic_research_bonus
+			modifier = {
+				consumer_goods_factor = 0.1
+				research_time_factor = -0.15
+				MONTHLY_POPULATION = -0.07
+			}
+			cost = 200
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_7_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_8 = {
+			level = 1
+			picture = generic_research_bonus
+			modifier = {
+				consumer_goods_factor = 0.15
+				research_time_factor = -0.2
+				MONTHLY_POPULATION = -0.1
+			}
+			cost = 250
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_8_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_9 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				consumer_goods_factor = 0.25
+				research_time_factor = -0.4
+				MONTHLY_POPULATION = -0.2
+			}
+			cost = 300
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_9_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_10 = {
+			level = 1
+			picture = air_support_focus
+			modifier = {
+				consumer_goods_factor = 0.4
+				research_time_factor = -0.7
+				MONTHLY_POPULATION = -0.4
+			}
+			cost = 700
+			removal_cost = 10
+			traits = { Beifa_shoujiaoyuquan_10_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shoujiaoyuquan_11 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = 0
+			traits = { Beifa_shoujiaoyuquan_11_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#政党
+	ZhengDang = {
+		Beifa_zhengdang_1 = {
+			level = 1
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				unity_factor = -0.1
+				drift_defence_factor = 0.8
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengdang_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengdang_2 = {
+			level = 1
+			picture = generic_spy_intel
+			modifier = {
+				unity_factor = -0.08
+				drift_defence_factor = 0.5
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengdang_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengdang_3 = {
+			level = 1
+			picture = generic_spy_political
+			modifier = {
+				unity_factor = -0.06
+				drift_defence_factor = 0.3
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengdang_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengdang_4 = {
+			level = 1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				unity_factor = -0.04
+				drift_defence_factor = 0.2
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengdang_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengdang_5 = {
+			level = 1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				unity_factor = -0.02
+				drift_defence_factor = 0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengdang_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengdang_6 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = 0
+			traits = { Beifa_zhengdang_6_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#征兵制
+	ZhengBingZhi = {
+		Beifa_zhengbingzhi_1 = {
+			level = 1
+			picture = generic_intel_bonus
+			modifier = {
+				unity_factor = -0.1
+				conscription_factor = 0.05
+				army_org_Factor = -0.05
+				army_attack_factor = -0.05
+				army_morale_factor = -0.05
+				supply_consumption_factor = 0.02
+				MONTHLY_POPULATION = -0.1
+				conscription = 0.15
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengbingzhi_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengbingzhi_2 = {
+			level = 1
+			picture = generic_manpower_bonus
+			modifier = {
+				unity_factor = -0.05
+				conscription_factor = 0.025
+				supply_consumption_factor = 0.01
+				MONTHLY_POPULATION = -0.05
+				conscription = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengbingzhi_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengbingzhi_3 = {
+			level = 1
+			picture = generic_manpower_bonus
+			modifier = {
+				unity_factor = -0.025
+				conscription_factor = 0.0125
+				supply_consumption_factor = 0.005
+				MONTHLY_POPULATION = -0.025
+				conscription = 0.025
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengbingzhi_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengbingzhi_4 = {
+			level = 1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription_factor = 0.00625
+				supply_consumption_factor = 0.0025
+				MONTHLY_POPULATION = -0.0125
+				conscription = 0.0125
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengbingzhi_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_zhengbingzhi_5 = {
+			level = 1
+			picture = generic_infantry_bonus
+			modifier = {
+				unity_factor = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_zhengbingzhi_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#移民政策
+	YiMinZhengCe = {
+		Beifa_yiminzhengce_1 = {
+			level = 1
+			picture = FRA_fortification_focus
+			modifier = {
+				consumer_goods_factor = -0.05
+				MONTHLY_POPULATION = -0.1
+				drift_defence_factor = 0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yiminzhengce_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_yiminzhengce_2 = {
+			level = 1
+			picture = generic_wall_line
+			modifier = {
+				unity_factor = -0.01
+				MONTHLY_POPULATION = 0.1
+				drift_defence_factor = -0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yiminzhengce_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_yiminzhengce_3 = {
+			level = 1
+			picture = generic_air_bonus
+			modifier = {
+				unity_factor = -0.05
+				consumer_goods_factor = 0.05
+				MONTHLY_POPULATION = 0.5
+				drift_defence_factor = -0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yiminzhengce_3_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_yiminzhengce_4 = {
+			level = 1
+			picture = generic_disjointed_gov
+			modifier = {
+				unity_factor = -0.07
+				consumer_goods_factor = 0.07
+				MONTHLY_POPULATION = 0.7
+				drift_defence_factor = -0.3
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_yiminzhengce_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#工会
+	GongHui = {
+		Beifa_gonghui_1 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				unity_factor = -0.03
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = -0.05
+				research_time_factor = 0.02
+				production_speed_buildings_factor = -0.10
+				local_resources_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_gonghui_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_gonghui_2 = {
+			level = 1
+			picture = generic_disjointed_gov
+			modifier = {
+				unity_factor = -0.01
+				consumer_goods_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_gonghui_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_gonghui_3 = {
+			level = 1
+			picture = generic_communism_drift_bonus
+			modifier = {
+				unity_factor = 0.01
+				consumer_goods_factor = 0.02
+				industrial_capacity_factory = 0.05
+				drift_defence_factor = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_gonghui_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_gonghui_4 = {
+			level = 1
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				unity_factor = 0.05
+				consumer_goods_factor = 0.04
+				industrial_capacity_factory = 0.07
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+				drift_defence_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_gonghui_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_gonghui_5 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = 0
+			traits = { Beifa_gonghui_5_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#少数族群
+	ShaoShuZuQun = {
+		Beifa_shaoshuzuqun_1 = {
+			level = 1
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				unity_factor = -0.05
+				consumer_goods_factor = -0.05
+				conscription_factor = -0.05
+				MONTHLY_POPULATION = -0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shaoshuzuqun_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shaoshuzuqun_2 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shaoshuzuqun_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shaoshuzuqun_3 = {
+			level = 1
+			picture = FRA_fortification_focus
+			modifier = {
+				unity_factor = 0.05
+				consumer_goods_factor = 0.025
+				conscription_factor = 0.025
+				MONTHLY_POPULATION = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shaoshuzuqun_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shaoshuzuqun_4 = {
+			level = 1
+			picture = anti_soviet_pact
+			cost = 0
+			removal_cost = 0
+			traits = { Beifa_shaoshuzuqun_4_t }
+			cancel_if_invalid = no
+			available = {
+				has_idea = CHI_gaozizhidu_wenti
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#4
+	#选举权iiiiiiiiiiiiiiiiiiii
+	XuanJuQuan = {
+		Beifa_xuanjuquan_1 = {
+			level = 1
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				unity_factor = -0.01
+				consumer_goods_factor = -0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_xuanjuquan_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_xuanjuquan_2 = {
+			level = 1
+			picture = FRA_motorized_focus
+			modifier = {
+				unity_factor = 0.01
+				consumer_goods_factor = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_xuanjuquan_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+				ruling_party = democratic
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_xuanjuquan_3 = {
+			level = 1
+			picture = FRA_motorized_focus
+			modifier = {
+				unity_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_xuanjuquan_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+				ruling_party = democratic
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_xuanjuquan_4 = {
+			level = 1
+			picture = FRA_motorized_focus
+			modifier = {
+				unity_factor = 0.07
+				consumer_goods_factor = 0.03
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_xuanjuquan_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+				ruling_party = democratic
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_xuanjuquan_5 = {
+			level = 1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				unity_factor = 0.1
+				consumer_goods_factor = 0.035
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_xuanjuquan_5_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+				ruling_party = democratic
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_xuanjuquan_6 = {
+			level = 1
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				unity_factor = 0.15
+				consumer_goods_factor = 0.04
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_xuanjuquan_6_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+				ruling_party = democratic
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#奴隶制
+	NuLiZhi = {
+		Beifa_nulizhi_1 = {
+			level = 1
+			picture = FRA_scw_intervention_republicans_focus
+			modifier = {
+				unity_factor = -0.5
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 1
+				production_speed_buildings_factor = 1
+				local_resources_factor = 1
+				MONTHLY_POPULATION = -1.2
+				trade_opinion_factor = -0.8
+				conscription = 0.1
+				drift_defence_factor = -0.9
+				partisan_effect = -1.5
+				army_core_defence_factor = -0.15
+				communism_drift = 0.25
+				research_time_factor = 0.1
+				political_power_factor = -0.2
+			}
+			country_event = {
+				days = 1
+				id = political.1
+			}
+			cost = 500
+			removal_cost = 0
+			traits = { Beifa_nulizhi_1_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+				ruling_party = neutrality
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_nulizhi_2 = {
+			level = 1
+			picture = generic_morale_bonus
+			cost = 0
+			removal_cost = 0
+			traits = { Beifa_nulizhi_2_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#上议院
+	ShangYiYuan = {
+		Beifa_shangyiyuan_1 = {
+			level = 1
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				unity_factor = -0.01
+				political_power_factor = 0.01
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shangyiyuan_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shangyiyuan_2 = {
+			level = 1
+			picture = generic_disjointed_gov
+			modifier = {
+				unity_factor = 0.01
+				political_power_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shangyiyuan_2_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shangyiyuan_3 = {
+			level = 1
+			picture = generic_spy_coup
+			modifier = {
+				unity_factor = 0.05
+				political_power_factor = -0.07
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shangyiyuan_3_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_shangyiyuan_4 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			modifier = {
+				unity_factor = 0.07
+				political_power_factor = -0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_shangyiyuan_4_t }
+			cancel_if_invalid = no
+			available = {
+				not = {
+					has_idea = CHI_gaozizhidu_wenti
+				}
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#公众集会
+	GongZhongJiHui = {
+		Beifa_gongzhongjihui_1 = {
+			level = 1
+			picture = FRA_matignon_agreements
+			modifier = {
+				unity_factor = -0.05
+				political_power_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_gongzhongjihui_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_gongzhongjihui_2 = {
+			level = 1
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				unity_factor = 0.05
+				political_power_factor = -0.05
+				drift_defence_factor = -0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_gongzhongjihui_2_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#出版权
+	ChuBanQuan = {
+		Beifa_chubanquan_1 = {
+			level = 1
+			picture = generic_spy_political
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.1
+				research_time_factor = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_chubanquan_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chubanquan_2 = {
+			level = 1
+			picture = FRA_factory_strikes
+			modifier = {
+				unity_factor = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_chubanquan_2_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_chubanquan_3 = {
+			level = 1
+			picture = generic_morale_bonus
+			modifier = {-
+				unity_factor = 0.1
+				drift_defence_factor = -0.2
+				research_time_factor = -0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_chubanquan_3_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	#投票制度
+	TouPiaoZhiDu = {
+		Beifa_toupiaozhidu_1 = {
+			level = 1
+			picture = combined_bomber_offensive
+			modifier = {
+				political_power_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_toupiaozhidu_1_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_toupiaozhidu_2 = {
+			level = 1
+			picture = generic_spy_political
+			modifier = {
+				unity_factor = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_toupiaozhidu_2_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		Beifa_toupiaozhidu_3 = {
+			level = 1
+			picture = generic_pp_unity_bonus
+			modifier = {-
+				political_power_factor = -0.05
+				drift_defence_factor = 0.05
+				unity_factor = 0.05
+			}
+			cost = 20
+			removal_cost = 10
+			traits = { Beifa_toupiaozhidu_3_t }
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

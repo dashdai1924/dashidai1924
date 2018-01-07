@@ -1,12 +1,44 @@
 idea_categories = {
-	Country_focus_te = {
+	neizheng = {
 		slot = Country_focus_te
-		slot = Beifa_shengchan_1
-		slot = Beifa_shengchan_2
-		slot = Beifa_shengchan_3
-		slot = Beifa_shengchan_4
-		slot = Beifa_shengchan_5
-		slot = Beifa_shengchan_6
+		slot = ShengyuZhengCe
+		slot = ChengLiJueYi
+		slot = ZuiDiGongZi
+		slot = ZuiDaGongShi
+		slot = AnQuanGuiZhang
+		
+		cost = 0
+		removal_cost = 0
+	}
+	neizheng2 = {
+		slot = ShiYeBuZhu
+		slot = TongGong
+		slot = TuiXiuJin
+		slot = WeiShengBaoJian
+		slot = HuanJingFa
+		slot = YiShuBuTie
+		
+		cost = 0
+		removal_cost = 0
+	}
+	neizheng3 = {
+		slot = ShouJiaoYuQuan
+		slot = ZhengDang
+		slot = ZhengBingZhi
+		slot = YiMinZhengCe
+		slot = GongHui
+		slot = ShaoShuZuQun
+		
+		cost = 0
+		removal_cost = 0
+	}
+	neizheng4 = {
+		slot = XuanJuQuan
+		slot = ShangYiYuan
+		slot = NuLiZhi
+		slot = GongZhongJiHui
+		slot = ChuBanQuan
+		slot = TouPiaoZhiDu
 		
 		cost = 0
 		removal_cost = 0

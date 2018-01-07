@@ -51,6 +51,28 @@ focus_tree = {
 
 	}
 	focus = {
+		id = SOV_diversify_the_programme
+		icon = GFX_focus_rocketry
+		cost = 10.00
+		x = 16
+		y = 5
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							name = secret
+							bonus = 0.5
+							uses = 2
+							category = rocketry
+						}
+				}
+			available = {
+
+}
+
+	}
+	focus = {
 		id = SOV_don_nutuwa_treaty_of_friendship
 		icon = GFX_goal_generic_military_deal
 		cost = 5.00
@@ -176,6 +198,50 @@ focus_tree = {
 				}
 			completion_reward = {
 					add_political_power = 160
+				}
+
+	}
+	focus = {
+		id = SOV_collectivist_propaganda
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_stalin_constitution
+		}
+		mutually_exclusive = {
+			focus = SOV_positive_heroism
+		}
+		x = 0
+		y = 0
+			ai_will_do = {
+					factor = 0.25
+				}
+			completion_reward = {
+					add_political_power = 120
+					add_ideas = SOV_collectivist_propaganda
+				}
+
+	}
+	focus = {
+		id = SOV_positive_heroism
+		icon = GFX_goal_generic_cavalry
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_stalin_constitution
+		}
+		mutually_exclusive = {
+			focus = SOV_collectivist_propaganda
+		}
+		x = 2
+		y = 0
+			ai_will_do = {
+					factor = 1
+				}
+			completion_reward = {
+					custom_effect_tooltip = available_military_high_command
+					show_ideas_tooltip = konstantin_rokossovsky
+					custom_effect_tooltip = available_theorist
+					show_ideas_tooltip = georgy_zhukov
 				}
 
 	}
@@ -4518,28 +4584,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_collectivist_propaganda
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_stalin_constitution
-			focus = SOV_trotsky_constitution
-		}
-		mutually_exclusive = {
-			focus = SOV_positive_heroism
-		}
-		x = 0
-		y = 0
-			ai_will_do = {
-					factor = 0.25
-				}
-			completion_reward = {
-					add_political_power = 120
-					add_ideas = SOV_collectivist_propaganda
-				}
-
-	}
-	focus = {
 		id = SOV_militarized_schools
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10.00
@@ -4605,30 +4649,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_positive_heroism
-		icon = GFX_goal_generic_cavalry
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_stalin_constitution
-			focus = SOV_trotsky_constitution
-		}
-		mutually_exclusive = {
-			focus = SOV_collectivist_propaganda
-		}
-		x = 2
-		y = 0
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					custom_effect_tooltip = available_military_high_command
-					show_ideas_tooltip = konstantin_rokossovsky
-					custom_effect_tooltip = available_theorist
-					show_ideas_tooltip = georgy_zhukov
-				}
-
-	}
-	focus = {
 		id = SOV_progress_cult
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
@@ -4684,8 +4704,8 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		cost = 10.00
 		prerequisite = {
-			focus = SOV_trotsky_constitution
 			focus = SOV_stalin_constitution
+			focus = SOV_trotsky_constitution
 		}
 		x = 4
 		y = 0
@@ -6193,31 +6213,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_diversify_the_programme
-		icon = GFX_focus_rocketry
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_research_city_experiment
-		}
-		x = 16
-		y = 5
-			ai_will_do = {
-					factor = 1
-				}
-			completion_reward = {
-					add_tech_bonus = {
-							name = secret
-							bonus = 0.5
-							uses = 2
-							category = rocketry
-						}
-				}
-			available = {
-
-}
-
-	}
-	focus = {
 		id = SOV_research_city_experiment
 		icon = GFX_focus_wonderweapons
 		cost = 10.00
@@ -7190,9 +7185,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = SOV_steel_torrent
-		}
-		prerequisite = {
-			focus = SOV_wang_pai_air
 		}
 		x = 23
 		y = 11

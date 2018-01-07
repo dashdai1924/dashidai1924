@@ -1,4 +1,4 @@
-﻿name="dashidai0.6"
+name="dashidai0.71"
 path="mod/dashidai/"
 tags={
 	"Alternative History"

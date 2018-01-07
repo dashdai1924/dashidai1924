@@ -1,0 +1,62 @@
+spriteTypes = {	
+	spriteType = {
+		name = "Beifa_shengchan_1"
+		texturefile = "gfx/interface/ideas/Beifa_shengchan_1.dds"
+	}
+	spriteType = {
+		name = "Beifa_shengchan_2"
+		texturefile = "gfx/interface/ideas/Beifa_shengchan_2.dds"
+	}
+	spriteType = {
+		name = "Beifa_shengchan_3"
+		texturefile = "gfx/interface/ideas/Beifa_shengchan_3.dds"
+	}
+	spriteType = {
+		name = "Beifa_shengchan_4"
+		texturefile = "gfx/interface/ideas/Beifa_shengchan_4.dds"
+	}
+	spriteType = {
+		name = "Beifa_shengchan_5"
+		texturefile = "gfx/interface/ideas/Beifa_shengchan_5.dds"
+	}
+	spriteType = {
+		name = "Beifa_shengchan_6"
+		texturefile = "gfx/interface/ideas/Beifa_shengchan_6.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_1"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_1.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_2"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_2.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_3"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_3.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_4"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_4.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_5"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_5.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_6"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_6.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_7"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_7.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_8"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_8.dds"
+	}
+	spriteType = {
+		name = "Beifa_renkou_9"
+		texturefile = "gfx/interface/ideas/Beifa_renkou_9.dds"
+	}
+}

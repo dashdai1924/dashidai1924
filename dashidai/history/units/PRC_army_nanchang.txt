@@ -1,0 +1,49 @@
+﻿division_template = {
+	name = "起义军"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "第11军24师"
+		location = 3992
+		division_template = "起义军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第11军25师"
+		location = 3992
+		division_template = "起义军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第11军10师"
+		location = 3992
+		division_template = "起义军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第20军1师"
+		location = 3992
+		division_template = "起义军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第20军2师"
+		location = 3992
+		division_template = "起义军"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "第9军"
+		location = 3992
+		division_template = "起义军"
+		start_experience_factor = 0.3
+	}
+}

@@ -140,20 +140,6 @@ units = {
 		location = 1187
 		division_template = "北伐军"
 		start_experience_factor = 1.0
-	}	
-	
-
-	##### ROCN #####
-	navy = {
-		name = "广东水师"
-		base = 4050
-		location = 4050 #Shanghai
-		ship = { name = "Yingrui" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Ninghai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Hairong" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Zhaohe" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		ship = { name = "Haiqi" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = CHI } } }
-		
 	}
 }
 
@@ -192,17 +178,5 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.55
 		efficiency = 100
-	}	
-	
-#Under Construction in Shanghai
-	# Light Cruiser 
-	add_equipment_production = { 		# "Pinghai"
-		equipment = {
-			type = light_cruiser_1
-			creator = "CHI" 
-		}
-		requested_factories = 1
-		progress = 0.33
-		amount = 1
 	}
 }

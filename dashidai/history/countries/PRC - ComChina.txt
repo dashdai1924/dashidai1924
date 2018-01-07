@@ -39,9 +39,9 @@ add_ideas = {
 add_opinion_modifier = { target = CHI modifier = hostile_status }
 
 create_country_leader = {
-	name = "陈独秀"
+	name = "毛泽东"
 	desc = "POLITICS_MAO_ZEDONG_DESC"
-	picture = "gfx/leaders/PRC/Portrait_PRC_Chen_DuXiu.dds"
+	picture = "gfx/leaders/PRC/Portrait_PRC_Mao_ZeDong.dds"
 	expire = "9999.1.1"
 	ideology = marxism
 	traits = {

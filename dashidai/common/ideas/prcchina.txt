@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		PRC_idea_threewangaibian = {
+			picture = air_support_focus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.1
+				army_org_Factor = 0.05
+				army_morale_factor = 0.1
+				planning_speed = 0.1
+				land_reinforce_rate = 0.05
+			}
+		}
+	}
+}

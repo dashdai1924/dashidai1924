@@ -1,4 +1,4 @@
-﻿#########################
+#########################
 ## beifa Mod Events ##
 #########################
 
@@ -227,51 +227,6 @@ country_event = {
 		}
 	}
 }
-# 南昌起义
-country_event = {
-	id = beifa.10
-	title = beifa.10.t
-	desc = beifa.10.d
-	picture = GFX_CHI_leader_qiyi
-	
-	is_triggered_only = yes
-	
-	mean_time_to_happen = { days = 1 }
-	option = {
-		name = beifa.10.a
-		country_event = { id = beifa.20 }
-		PRC = { transfer_state = 600 }
-			declare_war_on = {
-			target = PRC
-			type = annex_everything
-		}
-		PRC = { custom_effect_tooltip = PRC_honjun
-		hidden_effect = { load_oob = "PRC_honjun" } 
-		            }
-	}
-}
-# 和平
-country_event = {
-	id = beifa.11
-	title = beifa.11.t
-	desc = beifa.11.d
-	picture = GFX_CHI_leader_beifa
-	
-	is_triggered_only = no
-	fire_only_once = yes
-	
-	trigger = {
-	      tag = CHI
-	      date > 1927.8.7
-	}
-	mean_time_to_happen = { days = 1 }
-	option = {
-		name = beifa.11.a
-		CHI = {
-				 white_peace=PRC
-			}
-	}
-}
 #选择
 country_event = {
 	id = beifa.20
@@ -315,6 +270,9 @@ country_event = {
 		593 = {
             set_border_war = no
         }
+		remove_ideas = CHI_diyiciguogonghezuo
+		remove_ideas = CHI_diyiciguogonghezuo2
+		remove_ideas = CHI_diyiciguogonghezuo3
 	}
 	mean_time_to_happen = { days = 30 }
 
@@ -428,11 +386,9 @@ country_event = {
 	trigger = {
 		tag = CHI
 		date > 1927.4.14
-		613 = {
-			owner = CHI
-		}
-		746 = {
-			owner = CHI
+		CHI = {
+			controls_state = 613
+			controls_state = 746
 		}
 	}
 	immediate = {
@@ -456,6 +412,7 @@ country_event = {
 			load_oob = "ZZK - Chen Ji Tang"
 		}
 		add_named_threat = { threat = 0.01 name = 宁汉分裂 }
+		set_global_flag = 宁汉分裂
 	}
 
 	is_triggered_only = no
@@ -536,12 +493,11 @@ country_event = {
 	picture = GFX_CHI_leader_zhonguodonbei
 	trigger = {
 		tag = WAN
-		600 = { is_controlled_by = WAN }
-		600 = { is_owned_by = WHI }
-		747 = { is_controlled_by = WAN }
-		747 = { is_owned_by = WHI }
-		606 = { is_controlled_by = WAN }
-		606 = { is_owned_by = WHI }
+		WAN = {
+			controls_state = 600
+			controls_state = 747
+			controls_state = 606
+		}
 		NOT = { has_global_flag = 江浙战争结束 }
 		has_global_flag = 江浙战争开始
 	}
@@ -556,6 +512,12 @@ country_event = {
 		}
 		ZZL = {
 			transfer_state = 600
+			transfer_state = 767
+			transfer_state = 768
+			transfer_state = 769
+			transfer_state = 770
+			transfer_state = 771
+			transfer_state = 772
 			load_oob = "ZZL_1936"
 			load_oob = "ZZL - Cai Cheng Xun"
 		}

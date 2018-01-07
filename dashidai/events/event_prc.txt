@@ -1,0 +1,65 @@
+add_namespace = prcchina
+#南昌起义
+country_event = {
+	id = prcchina.1
+	title = prcchina.1.t
+	desc = prcchina.1.d
+	picture = GFX_CHI_leader_qiyi
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = prcchina.1.a
+		country_event = { id = beifa.20 }
+		PRC = { transfer_state = 767 }
+		PRC = {
+			custom_effect_tooltip = PRC_army_nanchang
+			hidden_effect = { load_oob = "PRC_army_nanchang" } 
+		}
+	}
+}
+#秋收起义
+country_event = {
+	id = prcchina.2
+	title = prcchina.2.t
+	desc = prcchina.2.d
+	picture = GFX_CHI_leader_qiyi
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = prcchina.2.a
+		PRC = {
+			transfer_state = 770
+			transfer_state = 771
+		}
+		PRC = {
+			custom_effect_tooltip = PRC_army_qiushu
+			hidden_effect = { load_oob = "PRC_army_qiushu" } 
+		}
+	}
+}
+#井冈山会师
+country_event = {
+	id = prcchina.3
+	title = prcchina.3.t
+	desc = prcchina.3.d
+	picture = GFX_CHI_leader_qiyi
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
+	option = {
+		name = prcchina.3.a
+		PRC = {
+			transfer_state = 772
+		}
+		CHI = {
+			transfer_state = 768
+			transfer_state = 770
+			transfer_state = 771
+		}
+	}
+}

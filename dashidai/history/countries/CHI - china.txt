@@ -18,6 +18,29 @@ add_ideas = {
 	CHI_dixiaoxingzheng_wenti
 	CHI_gaozizhidu_wenti
 	CHI_diyiciguogonghezuo
+	Beifa_renkou_9
+	Beifa_shengchan_5
+	Beifa_zuidagongshi_6
+	Beifa_zuidigongzi_6
+	Beifa_anquanguizhang_6
+	Beifa_shiyebuzhu_1
+	Beifa_tonggong_4
+	Beifa_tuixiujin_1
+	Beifa_weishengbaojian_1
+	Beifa_huanjingfa_1
+	Beifa_yishubutie_1
+	Beifa_shoujiaoyuquan_11
+	Beifa_zhengdang_6
+	Beifa_zhengbingzhi_1
+	Beifa_yiminzhengce_3
+	Beifa_gonghui_5
+	Beifa_shaoshuzuqun_4
+	Beifa_xuanjuquan_1
+	Beifa_shangyiyuan_1
+	Beifa_nulizhi_2
+	Beifa_gongzhongjihui_2
+	Beifa_chubanquan_2
+	Beifa_toupiaozhidu_3
 }
 
 set_convoys = 500
